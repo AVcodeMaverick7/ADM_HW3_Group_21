@@ -1,9 +1,10 @@
 ### Group 21
 # ADM_HOMEWORK 3
 
- In this homework we analyze the text of Airbnb property listings by creating  separate document as tsv file for each record from the dataset, we also built two separate search engines to analyse the text given in the query and fetch the properties that match our query 
+In this homework we analyze the text of Airbnb property listings by creating  separate document as tsv file for each record from the dataset, we also built two separate search engines to analyse the text given in the query and fetch the properties that match our query 
  
- All the aspects of questions asked in various steps of this Homework are covered in the attached files.
+All the aspects of questions asked in various steps of this Homework are covered in the attached files.
+ 
 
 ## Getting Started
 
@@ -28,6 +29,8 @@ Importing libraries Numpy, pandas,Json,Natural Language Toolkit for Tokenization
 * inv_indx.json             (Inverted Index for first Search Engine  )
 * new_invindx.json          (Inverted Index for Second Search Engine )
 * Humble_SearchResults.html (Map showing search results for a place e.g Humble )
+* vocabulary      ( A more optimized search engine which has less runtime )
+* new_backup_title_desc     (data containing the title and description )
 
 
 ## Authors
