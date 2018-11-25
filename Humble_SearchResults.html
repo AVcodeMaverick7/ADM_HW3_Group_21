@@ -1,0 +1,4265 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_bc4e3c5d71084954b82b8cf9c494a8b6 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_bc4e3c5d71084954b82b8cf9c494a8b6" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_bc4e3c5d71084954b82b8cf9c494a8b6 = L.map(
+        'map_bc4e3c5d71084954b82b8cf9c494a8b6', {
+        center: [29.9988312, -95.2621553],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_0f5260c764a74a1da68304e2fff86d31 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+    
+
+            var circle_f461c3b3b815400081e3f2baf7c9ae7b = L.circle(
+                [29.9988312, -95.2621553],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10000.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+            
+    
+        var marker_1fd53cdb2457451caf2b042927c6002f = L.marker(
+            [29.9988312, -95.2621553],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+
+                var icon_efdf62f61b12410c84ae855c582348ba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1fd53cdb2457451caf2b042927c6002f.setIcon(icon_efdf62f61b12410c84ae855c582348ba);
+            
+    
+            var popup_f81c72630b1c43e8acd61b723727090c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_50790b194d4b4771be80d804d1e0bdec = $('<div id="html_50790b194d4b4771be80d804d1e0bdec" style="width: 100.0%; height: 100.0%;">Humble</div>')[0];
+                popup_f81c72630b1c43e8acd61b723727090c.setContent(html_50790b194d4b4771be80d804d1e0bdec);
+            
+
+            marker_1fd53cdb2457451caf2b042927c6002f.bindPopup(popup_f81c72630b1c43e8acd61b723727090c)
+            ;
+
+            
+        
+    
+        marker_1fd53cdb2457451caf2b042927c6002f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4cedbf580329497eb3df15514fb3880f = L.marker(
+            [30.0201379199512, -95.29399600425128],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4f7e03021c6943b0b7339ad5f02f39fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c6ad0b5c61c744f080980442a3b772fb = $('<div id="html_c6ad0b5c61c744f080980442a3b772fb" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18520444?location=Cleveland%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_4f7e03021c6943b0b7339ad5f02f39fe.setContent(html_c6ad0b5c61c744f080980442a3b772fb);
+            
+
+            marker_4cedbf580329497eb3df15514fb3880f.bindPopup(popup_4f7e03021c6943b0b7339ad5f02f39fe)
+            ;
+
+            
+        
+    
+        marker_4cedbf580329497eb3df15514fb3880f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b11d820dba234b8c92d00784bbcafeb1 = L.marker(
+            [29.954680087782503, -95.1760702862707],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0554fd286a7b4beabc17f421d99400b2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a8f14055fe674291b803ab264586ba7d = $('<div id="html_a8f14055fe674291b803ab264586ba7d" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16964526?location=Channelview%2C%20TX"target="_blank">$1500</a></div>')[0];
+                popup_0554fd286a7b4beabc17f421d99400b2.setContent(html_a8f14055fe674291b803ab264586ba7d);
+            
+
+            marker_b11d820dba234b8c92d00784bbcafeb1.bindPopup(popup_0554fd286a7b4beabc17f421d99400b2)
+            ;
+
+            
+        
+    
+        marker_b11d820dba234b8c92d00784bbcafeb1.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_984c0ce01f3041c6a0ba8cdee7f70981 = L.marker(
+            [30.019379768387104, -95.3081879543499],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d10d30e0533e4c18a7f23e50ab042446 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_da82a0dfc23642a0888ab6cf71fa76f1 = $('<div id="html_da82a0dfc23642a0888ab6cf71fa76f1" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16925131?location=Cleveland%2C%20TX"target="_blank">$100</a></div>')[0];
+                popup_d10d30e0533e4c18a7f23e50ab042446.setContent(html_da82a0dfc23642a0888ab6cf71fa76f1);
+            
+
+            marker_984c0ce01f3041c6a0ba8cdee7f70981.bindPopup(popup_d10d30e0533e4c18a7f23e50ab042446)
+            ;
+
+            
+        
+    
+        marker_984c0ce01f3041c6a0ba8cdee7f70981.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9040a39c97b4476fbd8306e5fcebd972 = L.marker(
+            [30.000942588551997, -95.25816793356572],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8e5426d66e6a4e69afa4d1d19063a9e5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_954744b486324e52b6c5be35c4c28ceb = $('<div id="html_954744b486324e52b6c5be35c4c28ceb" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17006337?location=Cleveland%2C%20TX"target="_blank">$81</a></div>')[0];
+                popup_8e5426d66e6a4e69afa4d1d19063a9e5.setContent(html_954744b486324e52b6c5be35c4c28ceb);
+            
+
+            marker_9040a39c97b4476fbd8306e5fcebd972.bindPopup(popup_8e5426d66e6a4e69afa4d1d19063a9e5)
+            ;
+
+            
+        
+    
+        marker_9040a39c97b4476fbd8306e5fcebd972.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_cab402b5a5874c298ea61da94411234b = L.marker(
+            [30.050417372472896, -95.34459326466428],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_223be20a40c84df0a8849e46b78f51d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b9f562bd330f4b08808b1f7a2ffff2ca = $('<div id="html_b9f562bd330f4b08808b1f7a2ffff2ca" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15763855?location=Cleveland%2C%20TX"target="_blank">$115</a></div>')[0];
+                popup_223be20a40c84df0a8849e46b78f51d4.setContent(html_b9f562bd330f4b08808b1f7a2ffff2ca);
+            
+
+            marker_cab402b5a5874c298ea61da94411234b.bindPopup(popup_223be20a40c84df0a8849e46b78f51d4)
+            ;
+
+            
+        
+    
+        marker_cab402b5a5874c298ea61da94411234b.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e5f2ceb9d57f4d508144aacf58cc4a23 = L.marker(
+            [30.036835722653898, -95.22608776661751],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_f1e944afd041472394b90dc37954eac4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c7308474a5104048a482c492f48b8725 = $('<div id="html_c7308474a5104048a482c492f48b8725" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14555472?location=Cleveland%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_f1e944afd041472394b90dc37954eac4.setContent(html_c7308474a5104048a482c492f48b8725);
+            
+
+            marker_e5f2ceb9d57f4d508144aacf58cc4a23.bindPopup(popup_f1e944afd041472394b90dc37954eac4)
+            ;
+
+            
+        
+    
+        marker_e5f2ceb9d57f4d508144aacf58cc4a23.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_54acda7bd5214304a31f2f042c3763f2 = L.marker(
+            [29.9295383838455, -95.250962378514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_14036790a5724a0abeebfe385a486a99 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2dc842a5f4a145f6b0531313dd1ced5b = $('<div id="html_2dc842a5f4a145f6b0531313dd1ced5b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4520039?location=Channelview%2C%20TX"target="_blank">$200</a></div>')[0];
+                popup_14036790a5724a0abeebfe385a486a99.setContent(html_2dc842a5f4a145f6b0531313dd1ced5b);
+            
+
+            marker_54acda7bd5214304a31f2f042c3763f2.bindPopup(popup_14036790a5724a0abeebfe385a486a99)
+            ;
+
+            
+        
+    
+        marker_54acda7bd5214304a31f2f042c3763f2.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e972a8228dc745619c999833e4e797f9 = L.marker(
+            [29.9865691217172, -95.228183855981],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5d42152f9ba64f689c4632237b00f8ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0db69a2e518444b9a7629ff93ecaa64c = $('<div id="html_0db69a2e518444b9a7629ff93ecaa64c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16496167?location=Cleveland%2C%20TX"target="_blank">$175</a></div>')[0];
+                popup_5d42152f9ba64f689c4632237b00f8ee.setContent(html_0db69a2e518444b9a7629ff93ecaa64c);
+            
+
+            marker_e972a8228dc745619c999833e4e797f9.bindPopup(popup_5d42152f9ba64f689c4632237b00f8ee)
+            ;
+
+            
+        
+    
+        marker_e972a8228dc745619c999833e4e797f9.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_86387c0de6fb455e8026de9694741781 = L.marker(
+            [29.9963021066533, -95.2687710107982],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_10f644aa017849489d1d745ba3d566ea = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b3e3e16e6264468a19f679713110ce0 = $('<div id="html_1b3e3e16e6264468a19f679713110ce0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16396544?location=Cleveland%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_10f644aa017849489d1d745ba3d566ea.setContent(html_1b3e3e16e6264468a19f679713110ce0);
+            
+
+            marker_86387c0de6fb455e8026de9694741781.bindPopup(popup_10f644aa017849489d1d745ba3d566ea)
+            ;
+
+            
+        
+    
+        marker_86387c0de6fb455e8026de9694741781.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1b4c30a63c9f4d6a8950b72eefbc68be = L.marker(
+            [30.0366178770123, -95.1744311843334],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6908f9ddce5949cab9668ecd65e5757b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f2b14a5c104b4871b6d61f97bd6ade3f = $('<div id="html_f2b14a5c104b4871b6d61f97bd6ade3f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15605161?location=Cleveland%2C%20TX"target="_blank">$99</a></div>')[0];
+                popup_6908f9ddce5949cab9668ecd65e5757b.setContent(html_f2b14a5c104b4871b6d61f97bd6ade3f);
+            
+
+            marker_1b4c30a63c9f4d6a8950b72eefbc68be.bindPopup(popup_6908f9ddce5949cab9668ecd65e5757b)
+            ;
+
+            
+        
+    
+        marker_1b4c30a63c9f4d6a8950b72eefbc68be.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ed3e8f7a985c4f6b979cd1daa6785d62 = L.marker(
+            [30.0086543404603, -95.28784122567671],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_cedcdef3f7994b26953a899d97af401a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_129ab1236fe046c48b50ea707bc4f5b4 = $('<div id="html_129ab1236fe046c48b50ea707bc4f5b4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/7133536?location=Atascocita%2C%20TX"target="_blank">$100</a></div>')[0];
+                popup_cedcdef3f7994b26953a899d97af401a.setContent(html_129ab1236fe046c48b50ea707bc4f5b4);
+            
+
+            marker_ed3e8f7a985c4f6b979cd1daa6785d62.bindPopup(popup_cedcdef3f7994b26953a899d97af401a)
+            ;
+
+            
+        
+    
+        marker_ed3e8f7a985c4f6b979cd1daa6785d62.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7c3fb8514cce459a80263ec7ad26ed6e = L.marker(
+            [30.038173712308, -95.2242757115925],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_b8a8823c2b9642cc8649834d824428ae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_281899675ea1470eb00cb06cad8dabf7 = $('<div id="html_281899675ea1470eb00cb06cad8dabf7" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18854710?location=Atascocita%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_b8a8823c2b9642cc8649834d824428ae.setContent(html_281899675ea1470eb00cb06cad8dabf7);
+            
+
+            marker_7c3fb8514cce459a80263ec7ad26ed6e.bindPopup(popup_b8a8823c2b9642cc8649834d824428ae)
+            ;
+
+            
+        
+    
+        marker_7c3fb8514cce459a80263ec7ad26ed6e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c1de1120366c411f818d1759537a9e93 = L.marker(
+            [29.954680087782503, -95.1760702862707],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_fa1b15b610f44d23a1296fbde532df56 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c773740d42fe4ed6bb494638991fc007 = $('<div id="html_c773740d42fe4ed6bb494638991fc007" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16964526?location=Atascocita%2C%20TX"target="_blank">$1500</a></div>')[0];
+                popup_fa1b15b610f44d23a1296fbde532df56.setContent(html_c773740d42fe4ed6bb494638991fc007);
+            
+
+            marker_c1de1120366c411f818d1759537a9e93.bindPopup(popup_fa1b15b610f44d23a1296fbde532df56)
+            ;
+
+            
+        
+    
+        marker_c1de1120366c411f818d1759537a9e93.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_be5c16bfdde444c9845fa50c4e0557e5 = L.marker(
+            [30.0100616163868, -95.290028643531],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8e1c4c21af214b07b66a5119047b96e2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4241f244da554a578a9bf9873a393add = $('<div id="html_4241f244da554a578a9bf9873a393add" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15391685?location=Cleveland%2C%20TX"target="_blank">$50</a></div>')[0];
+                popup_8e1c4c21af214b07b66a5119047b96e2.setContent(html_4241f244da554a578a9bf9873a393add);
+            
+
+            marker_be5c16bfdde444c9845fa50c4e0557e5.bindPopup(popup_8e1c4c21af214b07b66a5119047b96e2)
+            ;
+
+            
+        
+    
+        marker_be5c16bfdde444c9845fa50c4e0557e5.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_09ca97034b9c407d9a3ea2e06523f5c5 = L.marker(
+            [29.937983635869397, -95.21750399233879],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6f0a8169432a49918cadbbf6e3aebd70 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_59e844a0797c4ba3ac0baa3112846a5b = $('<div id="html_59e844a0797c4ba3ac0baa3112846a5b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10888712?location=Atascocita%2C%20TX"target="_blank">$39</a></div>')[0];
+                popup_6f0a8169432a49918cadbbf6e3aebd70.setContent(html_59e844a0797c4ba3ac0baa3112846a5b);
+            
+
+            marker_09ca97034b9c407d9a3ea2e06523f5c5.bindPopup(popup_6f0a8169432a49918cadbbf6e3aebd70)
+            ;
+
+            
+        
+    
+        marker_09ca97034b9c407d9a3ea2e06523f5c5.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e320cbb177074092852e9d3092a40001 = L.marker(
+            [29.9550861944799, -95.173046807334],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5a6e1975a3524c249730b8d1c52114db = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_57da105c181a4b379419cce8e21d0026 = $('<div id="html_57da105c181a4b379419cce8e21d0026" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16467961?location=Atascocita%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_5a6e1975a3524c249730b8d1c52114db.setContent(html_57da105c181a4b379419cce8e21d0026);
+            
+
+            marker_e320cbb177074092852e9d3092a40001.bindPopup(popup_5a6e1975a3524c249730b8d1c52114db)
+            ;
+
+            
+        
+    
+        marker_e320cbb177074092852e9d3092a40001.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_acbd257f01244ec5a164d22dd3646289 = L.marker(
+            [30.0215677803355, -95.31194016362379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_257fc41a8bc74d0f88aa872c4fe638f3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e4bed63c2d394b33a219302ff23c59f4 = $('<div id="html_e4bed63c2d394b33a219302ff23c59f4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16228473?location=Atascocita%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_257fc41a8bc74d0f88aa872c4fe638f3.setContent(html_e4bed63c2d394b33a219302ff23c59f4);
+            
+
+            marker_acbd257f01244ec5a164d22dd3646289.bindPopup(popup_257fc41a8bc74d0f88aa872c4fe638f3)
+            ;
+
+            
+        
+    
+        marker_acbd257f01244ec5a164d22dd3646289.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e8788a93f192444ba5543b2c4b30ce9f = L.marker(
+            [29.9844360525734, -95.19598508492778],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ff3f7112cb2048c591f6fc3377525ed8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3aa15db5bff040619731314e19d20f4c = $('<div id="html_3aa15db5bff040619731314e19d20f4c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4483842?location=Atascocita%2C%20TX"target="_blank">$24</a></div>')[0];
+                popup_ff3f7112cb2048c591f6fc3377525ed8.setContent(html_3aa15db5bff040619731314e19d20f4c);
+            
+
+            marker_e8788a93f192444ba5543b2c4b30ce9f.bindPopup(popup_ff3f7112cb2048c591f6fc3377525ed8)
+            ;
+
+            
+        
+    
+        marker_e8788a93f192444ba5543b2c4b30ce9f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_45b81fab36834a3a966828337878cc02 = L.marker(
+            [29.9378413656248, -95.2421928409867],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_379bc11079bd4b25936a08c313e03762 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_14dec0d95a0448b28b515fbb8208d833 = $('<div id="html_14dec0d95a0448b28b515fbb8208d833" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/1884919?location=Baytown%2C%20TX"target="_blank">$37</a></div>')[0];
+                popup_379bc11079bd4b25936a08c313e03762.setContent(html_14dec0d95a0448b28b515fbb8208d833);
+            
+
+            marker_45b81fab36834a3a966828337878cc02.bindPopup(popup_379bc11079bd4b25936a08c313e03762)
+            ;
+
+            
+        
+    
+        marker_45b81fab36834a3a966828337878cc02.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c51bc694d1954df5877c399ac79bc8f8 = L.marker(
+            [30.0366178770123, -95.1744311843334],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_c09deb39ac35493d8f947cb8ca4cb380 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2ef0a19ac5cd481bb2a72bc9222607e6 = $('<div id="html_2ef0a19ac5cd481bb2a72bc9222607e6" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15605161?location=Atascocita%2C%20TX"target="_blank">$59</a></div>')[0];
+                popup_c09deb39ac35493d8f947cb8ca4cb380.setContent(html_2ef0a19ac5cd481bb2a72bc9222607e6);
+            
+
+            marker_c51bc694d1954df5877c399ac79bc8f8.bindPopup(popup_c09deb39ac35493d8f947cb8ca4cb380)
+            ;
+
+            
+        
+    
+        marker_c51bc694d1954df5877c399ac79bc8f8.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9b71ae6e9e7c4c03ba96b51d9af35d62 = L.marker(
+            [29.989861297849004, -95.2471603482132],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_16ffb939d5464fefa6834f6398af8799 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ca76c7c39c6e4d6a90314282b5738ceb = $('<div id="html_ca76c7c39c6e4d6a90314282b5738ceb" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12670981?location=Baytown%2C%20TX"target="_blank">$25</a></div>')[0];
+                popup_16ffb939d5464fefa6834f6398af8799.setContent(html_ca76c7c39c6e4d6a90314282b5738ceb);
+            
+
+            marker_9b71ae6e9e7c4c03ba96b51d9af35d62.bindPopup(popup_16ffb939d5464fefa6834f6398af8799)
+            ;
+
+            
+        
+    
+        marker_9b71ae6e9e7c4c03ba96b51d9af35d62.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6efca73d42774decb6b496870a65c52a = L.marker(
+            [29.976055293922602, -95.22145419909609],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_295c4987e4934578b9aa16a80d18106b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7fe2f0dc4b4848849e72dd389731bbf4 = $('<div id="html_7fe2f0dc4b4848849e72dd389731bbf4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15407807?location=Atascocita%2C%20TX"target="_blank">$50</a></div>')[0];
+                popup_295c4987e4934578b9aa16a80d18106b.setContent(html_7fe2f0dc4b4848849e72dd389731bbf4);
+            
+
+            marker_6efca73d42774decb6b496870a65c52a.bindPopup(popup_295c4987e4934578b9aa16a80d18106b)
+            ;
+
+            
+        
+    
+        marker_6efca73d42774decb6b496870a65c52a.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_57e53b6f9b474b9695130682f5748521 = L.marker(
+            [30.011817031894303, -95.3105297625288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4cef2b70183f4843b446f5f6954c9e80 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e96698a8f5d345af8ff6eb18ebd23cc2 = $('<div id="html_e96698a8f5d345af8ff6eb18ebd23cc2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/6057164?location=Atascocita%2C%20TX"target="_blank">$59</a></div>')[0];
+                popup_4cef2b70183f4843b446f5f6954c9e80.setContent(html_e96698a8f5d345af8ff6eb18ebd23cc2);
+            
+
+            marker_57e53b6f9b474b9695130682f5748521.bindPopup(popup_4cef2b70183f4843b446f5f6954c9e80)
+            ;
+
+            
+        
+    
+        marker_57e53b6f9b474b9695130682f5748521.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c33d9d1433d442df804a87a8f7af2807 = L.marker(
+            [30.071704427375103, -95.2028152811623],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4dce5023718846689a7bedeae423be83 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1447645255d449d38de0dfbae6eac373 = $('<div id="html_1447645255d449d38de0dfbae6eac373" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16596486?location=Conroe%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_4dce5023718846689a7bedeae423be83.setContent(html_1447645255d449d38de0dfbae6eac373);
+            
+
+            marker_c33d9d1433d442df804a87a8f7af2807.bindPopup(popup_4dce5023718846689a7bedeae423be83)
+            ;
+
+            
+        
+    
+        marker_c33d9d1433d442df804a87a8f7af2807.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2c70cee7f0a14999b64ff22d06fd9b48 = L.marker(
+            [30.011817031894303, -95.3105297625288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_bb48ec85dde842f0a9a18f5e2c17923e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f0b1d772eac24e1a82728732c7526ad8 = $('<div id="html_f0b1d772eac24e1a82728732c7526ad8" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/6057164?location=Conroe%2C%20TX"target="_blank">$59</a></div>')[0];
+                popup_bb48ec85dde842f0a9a18f5e2c17923e.setContent(html_f0b1d772eac24e1a82728732c7526ad8);
+            
+
+            marker_2c70cee7f0a14999b64ff22d06fd9b48.bindPopup(popup_bb48ec85dde842f0a9a18f5e2c17923e)
+            ;
+
+            
+        
+    
+        marker_2c70cee7f0a14999b64ff22d06fd9b48.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b098934a6259433f86e3912a7feea36a = L.marker(
+            [30.0656365778661, -95.23066160685171],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_f9f6750e23ab467899093d964acc1938 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6a989b9277f042369ad0720d386468c9 = $('<div id="html_6a989b9277f042369ad0720d386468c9" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16707195?location=Cleveland%2C%20TX"target="_blank">$999</a></div>')[0];
+                popup_f9f6750e23ab467899093d964acc1938.setContent(html_6a989b9277f042369ad0720d386468c9);
+            
+
+            marker_b098934a6259433f86e3912a7feea36a.bindPopup(popup_f9f6750e23ab467899093d964acc1938)
+            ;
+
+            
+        
+    
+        marker_b098934a6259433f86e3912a7feea36a.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_555adadab11d449aae183fb9a69f3dcf = L.marker(
+            [29.937983635869397, -95.21750399233879],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_340f4110c66f4ef79d2e1fe22ed5d216 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6c0756eb4b34c69b360c19adc974ba0 = $('<div id="html_a6c0756eb4b34c69b360c19adc974ba0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10888712?location=Channelview%2C%20TX"target="_blank">$39</a></div>')[0];
+                popup_340f4110c66f4ef79d2e1fe22ed5d216.setContent(html_a6c0756eb4b34c69b360c19adc974ba0);
+            
+
+            marker_555adadab11d449aae183fb9a69f3dcf.bindPopup(popup_340f4110c66f4ef79d2e1fe22ed5d216)
+            ;
+
+            
+        
+    
+        marker_555adadab11d449aae183fb9a69f3dcf.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0a0e127cd25b490bb28ab4ec8917e62c = L.marker(
+            [30.062811118206202, -95.23718879034142],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0befe11827cb45b39eb077e76391d6fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ce341c4185574f209f90851d5e468576 = $('<div id="html_ce341c4185574f209f90851d5e468576" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16544696?location=Cleveland%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_0befe11827cb45b39eb077e76391d6fe.setContent(html_ce341c4185574f209f90851d5e468576);
+            
+
+            marker_0a0e127cd25b490bb28ab4ec8917e62c.bindPopup(popup_0befe11827cb45b39eb077e76391d6fe)
+            ;
+
+            
+        
+    
+        marker_0a0e127cd25b490bb28ab4ec8917e62c.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ae44c15c8f9d431bb6fb8d50e28d92e1 = L.marker(
+            [29.992924975918797, -95.1666788299016],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_b10b54c9a8f44b3fa2318d5925191090 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a0c880ea4f174aacbfc4729fefb8f01a = $('<div id="html_a0c880ea4f174aacbfc4729fefb8f01a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/7011058?location=Cleveland%2C%20TX"target="_blank">$25</a></div>')[0];
+                popup_b10b54c9a8f44b3fa2318d5925191090.setContent(html_a0c880ea4f174aacbfc4729fefb8f01a);
+            
+
+            marker_ae44c15c8f9d431bb6fb8d50e28d92e1.bindPopup(popup_b10b54c9a8f44b3fa2318d5925191090)
+            ;
+
+            
+        
+    
+        marker_ae44c15c8f9d431bb6fb8d50e28d92e1.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8736dcb144a24d1ba2e5eb923f2483c6 = L.marker(
+            [30.071704427375103, -95.2028152811623],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d49b2dcd167a4311b75d8ad281aa9d6e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_638adb6d6ff142b99ef8a848e61b5337 = $('<div id="html_638adb6d6ff142b99ef8a848e61b5337" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16596486?location=Cleveland%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_d49b2dcd167a4311b75d8ad281aa9d6e.setContent(html_638adb6d6ff142b99ef8a848e61b5337);
+            
+
+            marker_8736dcb144a24d1ba2e5eb923f2483c6.bindPopup(popup_d49b2dcd167a4311b75d8ad281aa9d6e)
+            ;
+
+            
+        
+    
+        marker_8736dcb144a24d1ba2e5eb923f2483c6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b5564684d166432f8c6e9ea4a33eada5 = L.marker(
+            [29.9858060578205, -95.19097920834909],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6d95181e7f3d4b7ca10293b3b14d4a4c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c356488374c045b99297c67b8c7d9518 = $('<div id="html_c356488374c045b99297c67b8c7d9518" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18851148?location=Cleveland%2C%20TX"target="_blank">$94</a></div>')[0];
+                popup_6d95181e7f3d4b7ca10293b3b14d4a4c.setContent(html_c356488374c045b99297c67b8c7d9518);
+            
+
+            marker_b5564684d166432f8c6e9ea4a33eada5.bindPopup(popup_6d95181e7f3d4b7ca10293b3b14d4a4c)
+            ;
+
+            
+        
+    
+        marker_b5564684d166432f8c6e9ea4a33eada5.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_38b0ab40c6bf4c5392ad4f7bdeaa3d2e = L.marker(
+            [29.988057740027298, -95.1710283013464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_fd4793a8fe7d4a7da643d3382f3f7bbb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ca14eac2a22e49a1a8a0aa458255ae63 = $('<div id="html_ca14eac2a22e49a1a8a0aa458255ae63" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16165103?location=Cleveland%2C%20TX"target="_blank">$1000</a></div>')[0];
+                popup_fd4793a8fe7d4a7da643d3382f3f7bbb.setContent(html_ca14eac2a22e49a1a8a0aa458255ae63);
+            
+
+            marker_38b0ab40c6bf4c5392ad4f7bdeaa3d2e.bindPopup(popup_fd4793a8fe7d4a7da643d3382f3f7bbb)
+            ;
+
+            
+        
+    
+        marker_38b0ab40c6bf4c5392ad4f7bdeaa3d2e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d90efb3dd0fd4df4a9fa769db44c7aab = L.marker(
+            [29.968873452978603, -95.1818540079541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0674a81e3ae4474a9affd53add02d649 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_56e1343db11b4c498a04c524438674c5 = $('<div id="html_56e1343db11b4c498a04c524438674c5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14521900?location=Cleveland%2C%20TX"target="_blank">$45</a></div>')[0];
+                popup_0674a81e3ae4474a9affd53add02d649.setContent(html_56e1343db11b4c498a04c524438674c5);
+            
+
+            marker_d90efb3dd0fd4df4a9fa769db44c7aab.bindPopup(popup_0674a81e3ae4474a9affd53add02d649)
+            ;
+
+            
+        
+    
+        marker_d90efb3dd0fd4df4a9fa769db44c7aab.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b93d795a750a44eba20745428f8a8d4b = L.marker(
+            [30.079361123277696, -95.25703511002442],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_794c9ed3096d42888b5714943e9f8fab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_28fd7ad4881d4310933f4e41eae17e58 = $('<div id="html_28fd7ad4881d4310933f4e41eae17e58" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16558836?location=Cleveland%2C%20TX"target="_blank">$75</a></div>')[0];
+                popup_794c9ed3096d42888b5714943e9f8fab.setContent(html_28fd7ad4881d4310933f4e41eae17e58);
+            
+
+            marker_b93d795a750a44eba20745428f8a8d4b.bindPopup(popup_794c9ed3096d42888b5714943e9f8fab)
+            ;
+
+            
+        
+    
+        marker_b93d795a750a44eba20745428f8a8d4b.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_925f3221b7c748e2b5cccc60b948ad89 = L.marker(
+            [30.0519778952604, -95.34478480167971],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_74cb772bc2fb46b8a3082e667f6e8d74 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2a9be145015143ea928f0f2d60b0ba11 = $('<div id="html_2a9be145015143ea928f0f2d60b0ba11" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18676980?location=Conroe%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_74cb772bc2fb46b8a3082e667f6e8d74.setContent(html_2a9be145015143ea928f0f2d60b0ba11);
+            
+
+            marker_925f3221b7c748e2b5cccc60b948ad89.bindPopup(popup_74cb772bc2fb46b8a3082e667f6e8d74)
+            ;
+
+            
+        
+    
+        marker_925f3221b7c748e2b5cccc60b948ad89.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_15fb5437f22d445db8b13aec1eba963a = L.marker(
+            [30.016126016406897, -95.29607831426519],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_e5991a42e888450ea60724d9f02cf827 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fb4d8eccd8a64b0cac4bb59aedfb2a6f = $('<div id="html_fb4d8eccd8a64b0cac4bb59aedfb2a6f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16867589?location=Cleveland%2C%20TX"target="_blank">$60</a></div>')[0];
+                popup_e5991a42e888450ea60724d9f02cf827.setContent(html_fb4d8eccd8a64b0cac4bb59aedfb2a6f);
+            
+
+            marker_15fb5437f22d445db8b13aec1eba963a.bindPopup(popup_e5991a42e888450ea60724d9f02cf827)
+            ;
+
+            
+        
+    
+        marker_15fb5437f22d445db8b13aec1eba963a.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8b3b1261afa94709be41943eae55632f = L.marker(
+            [30.0506994647416, -95.34329153332929],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_890ea5bdc9b74b068362faff645b1b77 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2196384da53945f586af2acdceabe766 = $('<div id="html_2196384da53945f586af2acdceabe766" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15750289?location=Cleveland%2C%20TX"target="_blank">$36</a></div>')[0];
+                popup_890ea5bdc9b74b068362faff645b1b77.setContent(html_2196384da53945f586af2acdceabe766);
+            
+
+            marker_8b3b1261afa94709be41943eae55632f.bindPopup(popup_890ea5bdc9b74b068362faff645b1b77)
+            ;
+
+            
+        
+    
+        marker_8b3b1261afa94709be41943eae55632f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bfbfdcbad91a4aa6a046a46623e01a73 = L.marker(
+            [30.0526242774098, -95.2255578628201],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_fd676512efc6423fad0718ff82f7fe81 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de744f1ac4d74f5db646da3849e58215 = $('<div id="html_de744f1ac4d74f5db646da3849e58215" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16270399?location=Cleveland%2C%20TX"target="_blank">$150</a></div>')[0];
+                popup_fd676512efc6423fad0718ff82f7fe81.setContent(html_de744f1ac4d74f5db646da3849e58215);
+            
+
+            marker_bfbfdcbad91a4aa6a046a46623e01a73.bindPopup(popup_fd676512efc6423fad0718ff82f7fe81)
+            ;
+
+            
+        
+    
+        marker_bfbfdcbad91a4aa6a046a46623e01a73.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_da20b9606f4a4d548601b3da15c4d5a6 = L.marker(
+            [30.0381199851364, -95.24891292962879],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_78219ff3737c45459aa8bc1ee2d4552f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6224293bd0a541d2bd734c6fec2ac73c = $('<div id="html_6224293bd0a541d2bd734c6fec2ac73c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16814151?location=Cleveland%2C%20TX"target="_blank">$250</a></div>')[0];
+                popup_78219ff3737c45459aa8bc1ee2d4552f.setContent(html_6224293bd0a541d2bd734c6fec2ac73c);
+            
+
+            marker_da20b9606f4a4d548601b3da15c4d5a6.bindPopup(popup_78219ff3737c45459aa8bc1ee2d4552f)
+            ;
+
+            
+        
+    
+        marker_da20b9606f4a4d548601b3da15c4d5a6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d75877f988cd4712995fa89892b35661 = L.marker(
+            [30.021118045942302, -95.29062076352241],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_67d1ada35a094bb5bc4f4bde9b7e8bcd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b45af7b5d9dc4aae875ac98169b5ca29 = $('<div id="html_b45af7b5d9dc4aae875ac98169b5ca29" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16703349?location=Cleveland%2C%20TX"target="_blank">$122</a></div>')[0];
+                popup_67d1ada35a094bb5bc4f4bde9b7e8bcd.setContent(html_b45af7b5d9dc4aae875ac98169b5ca29);
+            
+
+            marker_d75877f988cd4712995fa89892b35661.bindPopup(popup_67d1ada35a094bb5bc4f4bde9b7e8bcd)
+            ;
+
+            
+        
+    
+        marker_d75877f988cd4712995fa89892b35661.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_cdd2b980275645509765859cb1c3803e = L.marker(
+            [30.0770089042458, -95.2185527214705],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a2625faee44d482dbdd7094418ff448c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_afc179d7cc5044f3b994325ff3a97743 = $('<div id="html_afc179d7cc5044f3b994325ff3a97743" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16663458?location=Cleveland%2C%20TX"target="_blank">$1000</a></div>')[0];
+                popup_a2625faee44d482dbdd7094418ff448c.setContent(html_afc179d7cc5044f3b994325ff3a97743);
+            
+
+            marker_cdd2b980275645509765859cb1c3803e.bindPopup(popup_a2625faee44d482dbdd7094418ff448c)
+            ;
+
+            
+        
+    
+        marker_cdd2b980275645509765859cb1c3803e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_059139b3c53a462f99937ca05ed794fb = L.marker(
+            [30.0364340707552, -95.3364828360708],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_2632e34771974942babfe0189e72f953 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bc270d109645401e8c31650eea94a8bd = $('<div id="html_bc270d109645401e8c31650eea94a8bd" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15859729?location=Cleveland%2C%20TX"target="_blank">$37</a></div>')[0];
+                popup_2632e34771974942babfe0189e72f953.setContent(html_bc270d109645401e8c31650eea94a8bd);
+            
+
+            marker_059139b3c53a462f99937ca05ed794fb.bindPopup(popup_2632e34771974942babfe0189e72f953)
+            ;
+
+            
+        
+    
+        marker_059139b3c53a462f99937ca05ed794fb.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_922a522530564dc88800db3512941cfd = L.marker(
+            [29.9856092283635, -95.1963202958599],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_053f61f144534903afa23e598baf4bd6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e59f24e1cd574432bbfafb6999e57b82 = $('<div id="html_e59f24e1cd574432bbfafb6999e57b82" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/8236599?location=Cleveland%2C%20TX"target="_blank">$280</a></div>')[0];
+                popup_053f61f144534903afa23e598baf4bd6.setContent(html_e59f24e1cd574432bbfafb6999e57b82);
+            
+
+            marker_922a522530564dc88800db3512941cfd.bindPopup(popup_053f61f144534903afa23e598baf4bd6)
+            ;
+
+            
+        
+    
+        marker_922a522530564dc88800db3512941cfd.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1c92937218404377b31dc77b32539945 = L.marker(
+            [30.000942588551997, -95.25816793356572],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_456286c06dd44ac48b309300753721d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a10986cb97d54873971ffdf0c8187488 = $('<div id="html_a10986cb97d54873971ffdf0c8187488" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17006337?location=Conroe%2C%20TX"target="_blank">$81</a></div>')[0];
+                popup_456286c06dd44ac48b309300753721d3.setContent(html_a10986cb97d54873971ffdf0c8187488);
+            
+
+            marker_1c92937218404377b31dc77b32539945.bindPopup(popup_456286c06dd44ac48b309300753721d3)
+            ;
+
+            
+        
+    
+        marker_1c92937218404377b31dc77b32539945.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2af5e28039c6473685fb01d73adbb046 = L.marker(
+            [29.9963021066533, -95.2687710107982],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_12dc8861b8ef4cc0be50d58bc55c004f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba97330ef34941fca09dbcb21ce9fdf4 = $('<div id="html_ba97330ef34941fca09dbcb21ce9fdf4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16396544?location=Conroe%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_12dc8861b8ef4cc0be50d58bc55c004f.setContent(html_ba97330ef34941fca09dbcb21ce9fdf4);
+            
+
+            marker_2af5e28039c6473685fb01d73adbb046.bindPopup(popup_12dc8861b8ef4cc0be50d58bc55c004f)
+            ;
+
+            
+        
+    
+        marker_2af5e28039c6473685fb01d73adbb046.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7a87ad53ed414f82b90592837ea0166e = L.marker(
+            [29.9969585985108, -95.2627100343045],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_c986888a31844d14ae01f35b14de040c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de3955ff661f4525a6a19e83c68e372f = $('<div id="html_de3955ff661f4525a6a19e83c68e372f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/11903402?location=Cleveland%2C%20TX"target="_blank">$51</a></div>')[0];
+                popup_c986888a31844d14ae01f35b14de040c.setContent(html_de3955ff661f4525a6a19e83c68e372f);
+            
+
+            marker_7a87ad53ed414f82b90592837ea0166e.bindPopup(popup_c986888a31844d14ae01f35b14de040c)
+            ;
+
+            
+        
+    
+        marker_7a87ad53ed414f82b90592837ea0166e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c1b247bf186746e38ea1e1417d5578d0 = L.marker(
+            [30.035156862765003, -95.17236348708859],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_9118bfe17ebc4464b5563313ac9c5cd2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_55d13f37a77347959594f666d0785065 = $('<div id="html_55d13f37a77347959594f666d0785065" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16102641?location=Cleveland%2C%20TX"target="_blank">$79</a></div>')[0];
+                popup_9118bfe17ebc4464b5563313ac9c5cd2.setContent(html_55d13f37a77347959594f666d0785065);
+            
+
+            marker_c1b247bf186746e38ea1e1417d5578d0.bindPopup(popup_9118bfe17ebc4464b5563313ac9c5cd2)
+            ;
+
+            
+        
+    
+        marker_c1b247bf186746e38ea1e1417d5578d0.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8c628b0516474958af9319a20386fdf3 = L.marker(
+            [29.9844360525734, -95.19598508492778],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8d1e317de3cd4123a263db77b5e769af = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67b7d56ac45f4742a957f262969f4e92 = $('<div id="html_67b7d56ac45f4742a957f262969f4e92" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4483842?location=Cleveland%2C%20TX"target="_blank">$24</a></div>')[0];
+                popup_8d1e317de3cd4123a263db77b5e769af.setContent(html_67b7d56ac45f4742a957f262969f4e92);
+            
+
+            marker_8c628b0516474958af9319a20386fdf3.bindPopup(popup_8d1e317de3cd4123a263db77b5e769af)
+            ;
+
+            
+        
+    
+        marker_8c628b0516474958af9319a20386fdf3.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3ebc53ab118f4973a82999448cae7fe8 = L.marker(
+            [30.0085341314413, -95.2963030042795],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_27d2e68486124a89aac3bf1ad4a476eb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_960a2c2f3a6448d880574c56ed04e93b = $('<div id="html_960a2c2f3a6448d880574c56ed04e93b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16947015?location=Cleveland%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_27d2e68486124a89aac3bf1ad4a476eb.setContent(html_960a2c2f3a6448d880574c56ed04e93b);
+            
+
+            marker_3ebc53ab118f4973a82999448cae7fe8.bindPopup(popup_27d2e68486124a89aac3bf1ad4a476eb)
+            ;
+
+            
+        
+    
+        marker_3ebc53ab118f4973a82999448cae7fe8.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d6634ef754ba41c7b32897e1ed80bf37 = L.marker(
+            [29.9877053916148, -95.19435267207191],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ef283594e71c46c08d42244f0c9c0a34 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_62295662a50b4b549b36819d0bcc864a = $('<div id="html_62295662a50b4b549b36819d0bcc864a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/1692975?location=Cleveland%2C%20TX"target="_blank">$41</a></div>')[0];
+                popup_ef283594e71c46c08d42244f0c9c0a34.setContent(html_62295662a50b4b549b36819d0bcc864a);
+            
+
+            marker_d6634ef754ba41c7b32897e1ed80bf37.bindPopup(popup_ef283594e71c46c08d42244f0c9c0a34)
+            ;
+
+            
+        
+    
+        marker_d6634ef754ba41c7b32897e1ed80bf37.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d0e18220b6654e288ffd45d880ee2da4 = L.marker(
+            [29.985361866072804, -95.22998985395171],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0d93440a56d54cc5acddf0cb1f02b9fd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f951cad9680b45a5be787abb7566b5e0 = $('<div id="html_f951cad9680b45a5be787abb7566b5e0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18638427?location=Cleveland%2C%20TX"target="_blank">$117</a></div>')[0];
+                popup_0d93440a56d54cc5acddf0cb1f02b9fd.setContent(html_f951cad9680b45a5be787abb7566b5e0);
+            
+
+            marker_d0e18220b6654e288ffd45d880ee2da4.bindPopup(popup_0d93440a56d54cc5acddf0cb1f02b9fd)
+            ;
+
+            
+        
+    
+        marker_d0e18220b6654e288ffd45d880ee2da4.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_8609453c27ca49228d17cdeb85f4928d = L.marker(
+            [30.0105457700521, -95.1668727372568],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_f397c949dcb74622a1785ee6034de8a2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ea5d8c1a82e840a293e3dee7645bc66d = $('<div id="html_ea5d8c1a82e840a293e3dee7645bc66d" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/19251347?location=Cleveland%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_f397c949dcb74622a1785ee6034de8a2.setContent(html_ea5d8c1a82e840a293e3dee7645bc66d);
+            
+
+            marker_8609453c27ca49228d17cdeb85f4928d.bindPopup(popup_f397c949dcb74622a1785ee6034de8a2)
+            ;
+
+            
+        
+    
+        marker_8609453c27ca49228d17cdeb85f4928d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c7d197e2268840978dd63d41a72af7f2 = L.marker(
+            [30.0361467451028, -95.2488033043637],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_1343b1b1df8448cfb2d476d78b71fbce = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2b6fb7bb0e9140d19e6e38bfc1f90577 = $('<div id="html_2b6fb7bb0e9140d19e6e38bfc1f90577" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16756822?location=Cleveland%2C%20TX"target="_blank">$700</a></div>')[0];
+                popup_1343b1b1df8448cfb2d476d78b71fbce.setContent(html_2b6fb7bb0e9140d19e6e38bfc1f90577);
+            
+
+            marker_c7d197e2268840978dd63d41a72af7f2.bindPopup(popup_1343b1b1df8448cfb2d476d78b71fbce)
+            ;
+
+            
+        
+    
+        marker_c7d197e2268840978dd63d41a72af7f2.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1be64a2e187746409beeb27bbe78ed5d = L.marker(
+            [30.0102346201717, -95.16684224562991],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_99b5ffe9ab814864ad7a672c3e608e1b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d68f9469987543d5a7404cb0e9b2c341 = $('<div id="html_d68f9469987543d5a7404cb0e9b2c341" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18209424?location=Cleveland%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_99b5ffe9ab814864ad7a672c3e608e1b.setContent(html_d68f9469987543d5a7404cb0e9b2c341);
+            
+
+            marker_1be64a2e187746409beeb27bbe78ed5d.bindPopup(popup_99b5ffe9ab814864ad7a672c3e608e1b)
+            ;
+
+            
+        
+    
+        marker_1be64a2e187746409beeb27bbe78ed5d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f3dfe610ca474ffd8d4fdf6cf3617ba5 = L.marker(
+            [30.010649092768997, -95.16272114402409],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_faaf69a195e14da89e259ee78d0056a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6f758bece7f44d586500a2dfc3d3197 = $('<div id="html_e6f758bece7f44d586500a2dfc3d3197" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16132450?location=Cleveland%2C%20TX"target="_blank">$1250</a></div>')[0];
+                popup_faaf69a195e14da89e259ee78d0056a8.setContent(html_e6f758bece7f44d586500a2dfc3d3197);
+            
+
+            marker_f3dfe610ca474ffd8d4fdf6cf3617ba5.bindPopup(popup_faaf69a195e14da89e259ee78d0056a8)
+            ;
+
+            
+        
+    
+        marker_f3dfe610ca474ffd8d4fdf6cf3617ba5.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2f94e5892e7348d9b57a87dbedbb157b = L.marker(
+            [30.0086543404603, -95.28784122567671],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_898c7a97aaa748679003c7b54ea61049 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3bba0f86b8ca4b358acb2da1da634f13 = $('<div id="html_3bba0f86b8ca4b358acb2da1da634f13" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/7133536?location=Cleveland%2C%20TX"target="_blank">$100</a></div>')[0];
+                popup_898c7a97aaa748679003c7b54ea61049.setContent(html_3bba0f86b8ca4b358acb2da1da634f13);
+            
+
+            marker_2f94e5892e7348d9b57a87dbedbb157b.bindPopup(popup_898c7a97aaa748679003c7b54ea61049)
+            ;
+
+            
+        
+    
+        marker_2f94e5892e7348d9b57a87dbedbb157b.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0dae5058bf3d4049abe1a696dee3dca8 = L.marker(
+            [30.0496043661649, -95.1794699595722],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_43560ddc66e84ff483804717ed170f87 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_841c0dd9ca8b4213908675b868eab820 = $('<div id="html_841c0dd9ca8b4213908675b868eab820" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16709269?location=Cleveland%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_43560ddc66e84ff483804717ed170f87.setContent(html_841c0dd9ca8b4213908675b868eab820);
+            
+
+            marker_0dae5058bf3d4049abe1a696dee3dca8.bindPopup(popup_43560ddc66e84ff483804717ed170f87)
+            ;
+
+            
+        
+    
+        marker_0dae5058bf3d4049abe1a696dee3dca8.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_008ccba0ee514df8aabf3747f4b1c06f = L.marker(
+            [29.9805549892207, -95.2008936446661],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_074ee27a1a1746dfafdc092bc8773ad3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3d0bc03bd65e4f489d49ecdf84aeef87 = $('<div id="html_3d0bc03bd65e4f489d49ecdf84aeef87" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16959298?location=Cleveland%2C%20TX"target="_blank">$2000</a></div>')[0];
+                popup_074ee27a1a1746dfafdc092bc8773ad3.setContent(html_3d0bc03bd65e4f489d49ecdf84aeef87);
+            
+
+            marker_008ccba0ee514df8aabf3747f4b1c06f.bindPopup(popup_074ee27a1a1746dfafdc092bc8773ad3)
+            ;
+
+            
+        
+    
+        marker_008ccba0ee514df8aabf3747f4b1c06f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a3a8120fb95d4e17a1f3f5b6aa8e3a91 = L.marker(
+            [30.006237979331697, -95.1913703161573],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ebea57e2a81949af9edd555ce4d09320 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d34dd11394534a3fa32c0570bb7a3857 = $('<div id="html_d34dd11394534a3fa32c0570bb7a3857" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16185617?location=Cleveland%2C%20TX"target="_blank">$125</a></div>')[0];
+                popup_ebea57e2a81949af9edd555ce4d09320.setContent(html_d34dd11394534a3fa32c0570bb7a3857);
+            
+
+            marker_a3a8120fb95d4e17a1f3f5b6aa8e3a91.bindPopup(popup_ebea57e2a81949af9edd555ce4d09320)
+            ;
+
+            
+        
+    
+        marker_a3a8120fb95d4e17a1f3f5b6aa8e3a91.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_49c255aee81248418b5bd0c173b53aa2 = L.marker(
+            [29.9793920732479, -95.2258262163957],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8ad17a9fe88f4ab28a092d4c16b4f352 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_48a9740e67454994bff22d6dfad6a253 = $('<div id="html_48a9740e67454994bff22d6dfad6a253" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16946276?location=Cleveland%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_8ad17a9fe88f4ab28a092d4c16b4f352.setContent(html_48a9740e67454994bff22d6dfad6a253);
+            
+
+            marker_49c255aee81248418b5bd0c173b53aa2.bindPopup(popup_8ad17a9fe88f4ab28a092d4c16b4f352)
+            ;
+
+            
+        
+    
+        marker_49c255aee81248418b5bd0c173b53aa2.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bd94218dc36d4527aede4a239f6281ad = L.marker(
+            [29.993180786852196, -95.19257944175119],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_53b6471baf8f42229612cab8eb208626 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fb8c3ca6cb56401d875e48b6d9a84d41 = $('<div id="html_fb8c3ca6cb56401d875e48b6d9a84d41" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17007004?location=Cleveland%2C%20TX"target="_blank">$30</a></div>')[0];
+                popup_53b6471baf8f42229612cab8eb208626.setContent(html_fb8c3ca6cb56401d875e48b6d9a84d41);
+            
+
+            marker_bd94218dc36d4527aede4a239f6281ad.bindPopup(popup_53b6471baf8f42229612cab8eb208626)
+            ;
+
+            
+        
+    
+        marker_bd94218dc36d4527aede4a239f6281ad.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_05e44f18ee6c44c9bf83cc287e51e2a0 = L.marker(
+            [29.9382011028015, -95.2122711915037],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_b7083d830b704f85bc538f47b23926dc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e90db756e40e43078dba02f71005bcc2 = $('<div id="html_e90db756e40e43078dba02f71005bcc2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16594092?location=Channelview%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_b7083d830b704f85bc538f47b23926dc.setContent(html_e90db756e40e43078dba02f71005bcc2);
+            
+
+            marker_05e44f18ee6c44c9bf83cc287e51e2a0.bindPopup(popup_b7083d830b704f85bc538f47b23926dc)
+            ;
+
+            
+        
+    
+        marker_05e44f18ee6c44c9bf83cc287e51e2a0.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_20abfcf3b8394b4899d2c6b8b2928ea4 = L.marker(
+            [30.0758499182683, -95.2609993396851],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a929c696259f4b6ab04449e8c0dd5c96 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4c1226772caf41ac8dbb92390591faef = $('<div id="html_4c1226772caf41ac8dbb92390591faef" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14435497?location=Cleveland%2C%20TX"target="_blank">$325</a></div>')[0];
+                popup_a929c696259f4b6ab04449e8c0dd5c96.setContent(html_4c1226772caf41ac8dbb92390591faef);
+            
+
+            marker_20abfcf3b8394b4899d2c6b8b2928ea4.bindPopup(popup_a929c696259f4b6ab04449e8c0dd5c96)
+            ;
+
+            
+        
+    
+        marker_20abfcf3b8394b4899d2c6b8b2928ea4.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_144447b73e3540b3b7d761fcec666fa4 = L.marker(
+            [30.041402083421303, -95.3307260712963],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8a17af0e99a94a719d35385d988eb956 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_08cb3c57964e4121a2aeb843ac30d787 = $('<div id="html_08cb3c57964e4121a2aeb843ac30d787" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13109321?location=Cleveland%2C%20TX"target="_blank">$45</a></div>')[0];
+                popup_8a17af0e99a94a719d35385d988eb956.setContent(html_08cb3c57964e4121a2aeb843ac30d787);
+            
+
+            marker_144447b73e3540b3b7d761fcec666fa4.bindPopup(popup_8a17af0e99a94a719d35385d988eb956)
+            ;
+
+            
+        
+    
+        marker_144447b73e3540b3b7d761fcec666fa4.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_14db51730e3649a1a78b4b31537e7fe6 = L.marker(
+            [30.081308393537398, -95.25106782841351],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_473d0deb32834d309d4701f32bf44a89 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_735a87680b5449ec9ae3f97ccd95ca8e = $('<div id="html_735a87680b5449ec9ae3f97ccd95ca8e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14732581?location=Cleveland%2C%20TX"target="_blank">$235</a></div>')[0];
+                popup_473d0deb32834d309d4701f32bf44a89.setContent(html_735a87680b5449ec9ae3f97ccd95ca8e);
+            
+
+            marker_14db51730e3649a1a78b4b31537e7fe6.bindPopup(popup_473d0deb32834d309d4701f32bf44a89)
+            ;
+
+            
+        
+    
+        marker_14db51730e3649a1a78b4b31537e7fe6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_348252ba775a4ecf85900ababe267a58 = L.marker(
+            [30.0044036832224, -95.1646758093595],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ff947cf0dc714c69b24ac62ee18e9bef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_919b4057d3e94d7d82f30b69b59a2fdb = $('<div id="html_919b4057d3e94d7d82f30b69b59a2fdb" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16885540?location=Cleveland%2C%20TX"target="_blank">$1900</a></div>')[0];
+                popup_ff947cf0dc714c69b24ac62ee18e9bef.setContent(html_919b4057d3e94d7d82f30b69b59a2fdb);
+            
+
+            marker_348252ba775a4ecf85900ababe267a58.bindPopup(popup_ff947cf0dc714c69b24ac62ee18e9bef)
+            ;
+
+            
+        
+    
+        marker_348252ba775a4ecf85900ababe267a58.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_104e6e95728e485bb8ce412c8d9724b7 = L.marker(
+            [30.0327228091994, -95.2408301357598],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_29f8e3ad4d6c4f92b6dc33b3ddecaff2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_25d84f3b3d3440619d137a1b22c30120 = $('<div id="html_25d84f3b3d3440619d137a1b22c30120" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16408556?location=Cleveland%2C%20TX"target="_blank">$200</a></div>')[0];
+                popup_29f8e3ad4d6c4f92b6dc33b3ddecaff2.setContent(html_25d84f3b3d3440619d137a1b22c30120);
+            
+
+            marker_104e6e95728e485bb8ce412c8d9724b7.bindPopup(popup_29f8e3ad4d6c4f92b6dc33b3ddecaff2)
+            ;
+
+            
+        
+    
+        marker_104e6e95728e485bb8ce412c8d9724b7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_763540f9fec6481d93b893a9655ba88e = L.marker(
+            [30.010022328147603, -95.2898455079537],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0b5b2fba366448cf80c5a64d258576c5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93c00b31e25e4a4b8775431c363dd975 = $('<div id="html_93c00b31e25e4a4b8775431c363dd975" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/1328011?location=Cleveland%2C%20TX"target="_blank">$95</a></div>')[0];
+                popup_0b5b2fba366448cf80c5a64d258576c5.setContent(html_93c00b31e25e4a4b8775431c363dd975);
+            
+
+            marker_763540f9fec6481d93b893a9655ba88e.bindPopup(popup_0b5b2fba366448cf80c5a64d258576c5)
+            ;
+
+            
+        
+    
+        marker_763540f9fec6481d93b893a9655ba88e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_dff99865e84241eb92d7ca9017344de7 = L.marker(
+            [30.0506994647416, -95.34329153332929],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8a083d0866774f5b81113abcd6e915d3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4338f6cbf480484f8365a7617fd88978 = $('<div id="html_4338f6cbf480484f8365a7617fd88978" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15750289?location=Conroe%2C%20TX"target="_blank">$36</a></div>')[0];
+                popup_8a083d0866774f5b81113abcd6e915d3.setContent(html_4338f6cbf480484f8365a7617fd88978);
+            
+
+            marker_dff99865e84241eb92d7ca9017344de7.bindPopup(popup_8a083d0866774f5b81113abcd6e915d3)
+            ;
+
+            
+        
+    
+        marker_dff99865e84241eb92d7ca9017344de7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_03e56ccd6b974259bd2e95bc5c568350 = L.marker(
+            [30.0103918354683, -95.1597832919272],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_213481f07cae439f830ec92dbad9eef3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ea6d86eeee24484f92278438f328952c = $('<div id="html_ea6d86eeee24484f92278438f328952c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18596806?location=Cleveland%2C%20TX"target="_blank">$55</a></div>')[0];
+                popup_213481f07cae439f830ec92dbad9eef3.setContent(html_ea6d86eeee24484f92278438f328952c);
+            
+
+            marker_03e56ccd6b974259bd2e95bc5c568350.bindPopup(popup_213481f07cae439f830ec92dbad9eef3)
+            ;
+
+            
+        
+    
+        marker_03e56ccd6b974259bd2e95bc5c568350.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_878667c1efa143ed8713f4b97f35afae = L.marker(
+            [30.039182862202896, -95.22587646521539],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8ec6c209b9584f3984d3fcfcecc61efd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b202bb903b824316ab0f3cb191ea90c4 = $('<div id="html_b202bb903b824316ab0f3cb191ea90c4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18852447?location=Cleveland%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_8ec6c209b9584f3984d3fcfcecc61efd.setContent(html_b202bb903b824316ab0f3cb191ea90c4);
+            
+
+            marker_878667c1efa143ed8713f4b97f35afae.bindPopup(popup_8ec6c209b9584f3984d3fcfcecc61efd)
+            ;
+
+            
+        
+    
+        marker_878667c1efa143ed8713f4b97f35afae.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_60f3b1968a724aa98b5d79e49dcb665f = L.marker(
+            [30.0215677803355, -95.31194016362379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8aa80b9d8c4c4f05a5f0f620c3b45363 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d50a1858c4d844c9aa4c57fb0212d4e3 = $('<div id="html_d50a1858c4d844c9aa4c57fb0212d4e3" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16228473?location=Cleveland%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_8aa80b9d8c4c4f05a5f0f620c3b45363.setContent(html_d50a1858c4d844c9aa4c57fb0212d4e3);
+            
+
+            marker_60f3b1968a724aa98b5d79e49dcb665f.bindPopup(popup_8aa80b9d8c4c4f05a5f0f620c3b45363)
+            ;
+
+            
+        
+    
+        marker_60f3b1968a724aa98b5d79e49dcb665f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b2f52a57dd704397b23f81a689117ca3 = L.marker(
+            [29.9839140141085, -95.1658891257748],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d98706c0442340d1a6f7a295a4cdff7a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_276e06ded27d4db480d8fa89b3e6601e = $('<div id="html_276e06ded27d4db480d8fa89b3e6601e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16794840?location=Cleveland%2C%20TX"target="_blank">$90</a></div>')[0];
+                popup_d98706c0442340d1a6f7a295a4cdff7a.setContent(html_276e06ded27d4db480d8fa89b3e6601e);
+            
+
+            marker_b2f52a57dd704397b23f81a689117ca3.bindPopup(popup_d98706c0442340d1a6f7a295a4cdff7a)
+            ;
+
+            
+        
+    
+        marker_b2f52a57dd704397b23f81a689117ca3.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_63e3cc57577f465aa24029cfd872f8d9 = L.marker(
+            [30.038173712308, -95.2242757115925],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_20e3e8fd016b4f9ea4a3a0740df39411 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c2c7325633404ca0bb035f3f967cb2ed = $('<div id="html_c2c7325633404ca0bb035f3f967cb2ed" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18854710?location=Cleveland%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_20e3e8fd016b4f9ea4a3a0740df39411.setContent(html_c2c7325633404ca0bb035f3f967cb2ed);
+            
+
+            marker_63e3cc57577f465aa24029cfd872f8d9.bindPopup(popup_20e3e8fd016b4f9ea4a3a0740df39411)
+            ;
+
+            
+        
+    
+        marker_63e3cc57577f465aa24029cfd872f8d9.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0e87f1dcde614eadb6e9b88ce51980f5 = L.marker(
+            [30.0510138185143, -95.3432089744882],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_05666d411c5c49b6a4aabc583d2d1a4a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_06f8739086fd4a9bb8fd6d7eca836e0f = $('<div id="html_06f8739086fd4a9bb8fd6d7eca836e0f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15721184?location=Cleveland%2C%20TX"target="_blank">$104</a></div>')[0];
+                popup_05666d411c5c49b6a4aabc583d2d1a4a.setContent(html_06f8739086fd4a9bb8fd6d7eca836e0f);
+            
+
+            marker_0e87f1dcde614eadb6e9b88ce51980f5.bindPopup(popup_05666d411c5c49b6a4aabc583d2d1a4a)
+            ;
+
+            
+        
+    
+        marker_0e87f1dcde614eadb6e9b88ce51980f5.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_26c9e1d7bace4db7b31d15b444f98101 = L.marker(
+            [30.0572888943159, -95.18675091350491],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5562c4e64cc84867a83fdc4b403e2c67 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3cdfb4b83f584cb982d7f0aa90c73529 = $('<div id="html_3cdfb4b83f584cb982d7f0aa90c73529" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16942967?location=Cleveland%2C%20TX"target="_blank">$2000</a></div>')[0];
+                popup_5562c4e64cc84867a83fdc4b403e2c67.setContent(html_3cdfb4b83f584cb982d7f0aa90c73529);
+            
+
+            marker_26c9e1d7bace4db7b31d15b444f98101.bindPopup(popup_5562c4e64cc84867a83fdc4b403e2c67)
+            ;
+
+            
+        
+    
+        marker_26c9e1d7bace4db7b31d15b444f98101.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f2ea72b8db3249afb5135b0b00ea3cbf = L.marker(
+            [30.0099536833734, -95.2920545561285],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6795616980324bfe87c11c9d3324b688 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9aaa21c2a50740c8b81f87b8afc52b0a = $('<div id="html_9aaa21c2a50740c8b81f87b8afc52b0a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15191972?location=Cleveland%2C%20TX"target="_blank">$2500</a></div>')[0];
+                popup_6795616980324bfe87c11c9d3324b688.setContent(html_9aaa21c2a50740c8b81f87b8afc52b0a);
+            
+
+            marker_f2ea72b8db3249afb5135b0b00ea3cbf.bindPopup(popup_6795616980324bfe87c11c9d3324b688)
+            ;
+
+            
+        
+    
+        marker_f2ea72b8db3249afb5135b0b00ea3cbf.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_46c254c027454aabbbb56e6744ccae3e = L.marker(
+            [29.929454284867898, -95.20295945632591],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_e9989dc622ab4a1fab67324bb4875bc9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8de5afc44b1c435bbd34c639bf5c2f81 = $('<div id="html_8de5afc44b1c435bbd34c639bf5c2f81" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17021843?location=Channelview%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_e9989dc622ab4a1fab67324bb4875bc9.setContent(html_8de5afc44b1c435bbd34c639bf5c2f81);
+            
+
+            marker_46c254c027454aabbbb56e6744ccae3e.bindPopup(popup_e9989dc622ab4a1fab67324bb4875bc9)
+            ;
+
+            
+        
+    
+        marker_46c254c027454aabbbb56e6744ccae3e.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e06d815152994c518dfb5547f6c539df = L.marker(
+            [30.0127146628369, -95.19130193738859],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5de49465822f4655bfef45018feb5cdf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d17a79c4b6a04a71a27bf4246e6bc9af = $('<div id="html_d17a79c4b6a04a71a27bf4246e6bc9af" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16442102?location=Cleveland%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_5de49465822f4655bfef45018feb5cdf.setContent(html_d17a79c4b6a04a71a27bf4246e6bc9af);
+            
+
+            marker_e06d815152994c518dfb5547f6c539df.bindPopup(popup_5de49465822f4655bfef45018feb5cdf)
+            ;
+
+            
+        
+    
+        marker_e06d815152994c518dfb5547f6c539df.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3727a0b7844a486ca8af89238751df54 = L.marker(
+            [29.9848173355831, -95.1698971901951],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_69de1a4978af481282ebf67082fbbd7b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8bd5719566494219a053e9659a9c88ca = $('<div id="html_8bd5719566494219a053e9659a9c88ca" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17732344?location=Cleveland%2C%20TX"target="_blank">$177</a></div>')[0];
+                popup_69de1a4978af481282ebf67082fbbd7b.setContent(html_8bd5719566494219a053e9659a9c88ca);
+            
+
+            marker_3727a0b7844a486ca8af89238751df54.bindPopup(popup_69de1a4978af481282ebf67082fbbd7b)
+            ;
+
+            
+        
+    
+        marker_3727a0b7844a486ca8af89238751df54.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9bf3d53bf7d741b7aabeffd5e71a519f = L.marker(
+            [29.9739463594964, -95.1822663708305],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4b13d91e45d04f36a17f8d2864939038 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_71a811225d324230823188a2b0ea30e6 = $('<div id="html_71a811225d324230823188a2b0ea30e6" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16179584?location=Cleveland%2C%20TX"target="_blank">$5000</a></div>')[0];
+                popup_4b13d91e45d04f36a17f8d2864939038.setContent(html_71a811225d324230823188a2b0ea30e6);
+            
+
+            marker_9bf3d53bf7d741b7aabeffd5e71a519f.bindPopup(popup_4b13d91e45d04f36a17f8d2864939038)
+            ;
+
+            
+        
+    
+        marker_9bf3d53bf7d741b7aabeffd5e71a519f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_3c105e80ad8748aba63bbdb14f359890 = L.marker(
+            [30.011817031894303, -95.3105297625288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_de3c12874cb944e8936c4a99e096a096 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_afa38938be1f4d3c98d683c4bbe81f64 = $('<div id="html_afa38938be1f4d3c98d683c4bbe81f64" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/6057164?location=Cleveland%2C%20TX"target="_blank">$59</a></div>')[0];
+                popup_de3c12874cb944e8936c4a99e096a096.setContent(html_afa38938be1f4d3c98d683c4bbe81f64);
+            
+
+            marker_3c105e80ad8748aba63bbdb14f359890.bindPopup(popup_de3c12874cb944e8936c4a99e096a096)
+            ;
+
+            
+        
+    
+        marker_3c105e80ad8748aba63bbdb14f359890.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b5f5d2d2444d49e4bc8c9e00990b0dd7 = L.marker(
+            [30.062050334075998, -95.22974567461858],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_e6199d23c9c346789479320214b5fb6d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_61854049edba4dcf9a3b23907f60836d = $('<div id="html_61854049edba4dcf9a3b23907f60836d" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12678212?location=Cleveland%2C%20TX"target="_blank">$199</a></div>')[0];
+                popup_e6199d23c9c346789479320214b5fb6d.setContent(html_61854049edba4dcf9a3b23907f60836d);
+            
+
+            marker_b5f5d2d2444d49e4bc8c9e00990b0dd7.bindPopup(popup_e6199d23c9c346789479320214b5fb6d)
+            ;
+
+            
+        
+    
+        marker_b5f5d2d2444d49e4bc8c9e00990b0dd7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5b5a084dd7b54433a7e066a90a6b4ed0 = L.marker(
+            [30.035328409127498, -95.1735268940032],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_415631f750fb4a9c80557891d4ce883d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a98c756484d4f419670317ec47bea94 = $('<div id="html_5a98c756484d4f419670317ec47bea94" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15179395?location=Cleveland%2C%20TX"target="_blank">$79</a></div>')[0];
+                popup_415631f750fb4a9c80557891d4ce883d.setContent(html_5a98c756484d4f419670317ec47bea94);
+            
+
+            marker_5b5a084dd7b54433a7e066a90a6b4ed0.bindPopup(popup_415631f750fb4a9c80557891d4ce883d)
+            ;
+
+            
+        
+    
+        marker_5b5a084dd7b54433a7e066a90a6b4ed0.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_cb0be59a0b664017bd225e6e0c9fa3a1 = L.marker(
+            [29.978522343174802, -95.2271521691497],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_43efea5b46654d2986e4fc688be74e6d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_725fe35430a5479da20915b1904f0c39 = $('<div id="html_725fe35430a5479da20915b1904f0c39" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4227275?location=Cleveland%2C%20TX"target="_blank">$167</a></div>')[0];
+                popup_43efea5b46654d2986e4fc688be74e6d.setContent(html_725fe35430a5479da20915b1904f0c39);
+            
+
+            marker_cb0be59a0b664017bd225e6e0c9fa3a1.bindPopup(popup_43efea5b46654d2986e4fc688be74e6d)
+            ;
+
+            
+        
+    
+        marker_cb0be59a0b664017bd225e6e0c9fa3a1.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ed09ad9a6af84504adfe93c8a71f15c4 = L.marker(
+            [30.059279665850802, -95.2321908452401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5f080f1858f94e288463e8a694442495 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bf0c7947e2cd4f29925c6eff37fd8a07 = $('<div id="html_bf0c7947e2cd4f29925c6eff37fd8a07" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17043180?location=Cleveland%2C%20TX"target="_blank">$349</a></div>')[0];
+                popup_5f080f1858f94e288463e8a694442495.setContent(html_bf0c7947e2cd4f29925c6eff37fd8a07);
+            
+
+            marker_ed09ad9a6af84504adfe93c8a71f15c4.bindPopup(popup_5f080f1858f94e288463e8a694442495)
+            ;
+
+            
+        
+    
+        marker_ed09ad9a6af84504adfe93c8a71f15c4.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_acf86834921e45fc88b1f486f490a0d0 = L.marker(
+            [30.0538092882258, -95.21176777129108],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_922f276195054ed98826373929fceb3e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb931ed3e2084858b8ff64b6d174baf5 = $('<div id="html_eb931ed3e2084858b8ff64b6d174baf5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14091340?location=Cleveland%2C%20TX"target="_blank">$55</a></div>')[0];
+                popup_922f276195054ed98826373929fceb3e.setContent(html_eb931ed3e2084858b8ff64b6d174baf5);
+            
+
+            marker_acf86834921e45fc88b1f486f490a0d0.bindPopup(popup_922f276195054ed98826373929fceb3e)
+            ;
+
+            
+        
+    
+        marker_acf86834921e45fc88b1f486f490a0d0.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_53b47f2e58964515be56d9fd65dbf49a = L.marker(
+            [29.9550861944799, -95.173046807334],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a2ba436011204014a73aeb50ac06c408 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b6bba34bdc7b4c498e0ee4d7f487b09e = $('<div id="html_b6bba34bdc7b4c498e0ee4d7f487b09e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16467961?location=Channelview%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_a2ba436011204014a73aeb50ac06c408.setContent(html_b6bba34bdc7b4c498e0ee4d7f487b09e);
+            
+
+            marker_53b47f2e58964515be56d9fd65dbf49a.bindPopup(popup_a2ba436011204014a73aeb50ac06c408)
+            ;
+
+            
+        
+    
+        marker_53b47f2e58964515be56d9fd65dbf49a.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_dbe5cc153be6467bb35c399e40b5bd8b = L.marker(
+            [30.0054443247446, -95.1697876936083],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_2c81f8242d164990a05a83d8a60037fc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cc14f1ee9e0446d3873eca1099a30157 = $('<div id="html_cc14f1ee9e0446d3873eca1099a30157" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16975933?location=Cleveland%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_2c81f8242d164990a05a83d8a60037fc.setContent(html_cc14f1ee9e0446d3873eca1099a30157);
+            
+
+            marker_dbe5cc153be6467bb35c399e40b5bd8b.bindPopup(popup_2c81f8242d164990a05a83d8a60037fc)
+            ;
+
+            
+        
+    
+        marker_dbe5cc153be6467bb35c399e40b5bd8b.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fd839273ddd3487e9017c72defb82618 = L.marker(
+            [29.9930803472509, -95.1957278369248],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_3cea36f362ff4214894abc6e7eca5a9b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_70021886cef84c4d828cee80d73d080b = $('<div id="html_70021886cef84c4d828cee80d73d080b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16932918?location=Cleveland%2C%20TX"target="_blank">$1500</a></div>')[0];
+                popup_3cea36f362ff4214894abc6e7eca5a9b.setContent(html_70021886cef84c4d828cee80d73d080b);
+            
+
+            marker_fd839273ddd3487e9017c72defb82618.bindPopup(popup_3cea36f362ff4214894abc6e7eca5a9b)
+            ;
+
+            
+        
+    
+        marker_fd839273ddd3487e9017c72defb82618.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e78f54c81f1e416797f15007ce1f1cc6 = L.marker(
+            [30.0352474963819, -95.1722478634273],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4ded0a6a7bed4d399db52fe4d6c79193 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fce205ae309a430299bff1741141f55c = $('<div id="html_fce205ae309a430299bff1741141f55c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18073069?location=Cleveland%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_4ded0a6a7bed4d399db52fe4d6c79193.setContent(html_fce205ae309a430299bff1741141f55c);
+            
+
+            marker_e78f54c81f1e416797f15007ce1f1cc6.bindPopup(popup_4ded0a6a7bed4d399db52fe4d6c79193)
+            ;
+
+            
+        
+    
+        marker_e78f54c81f1e416797f15007ce1f1cc6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6703596ce71f4e84b9caeb5ae2ac2ea9 = L.marker(
+            [30.0519778952604, -95.34478480167971],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_f01720912c284f9cac9c42dacde7cea0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_36f5e59258164d7690f9419be40a11ea = $('<div id="html_36f5e59258164d7690f9419be40a11ea" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18676980?location=Cleveland%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_f01720912c284f9cac9c42dacde7cea0.setContent(html_36f5e59258164d7690f9419be40a11ea);
+            
+
+            marker_6703596ce71f4e84b9caeb5ae2ac2ea9.bindPopup(popup_f01720912c284f9cac9c42dacde7cea0)
+            ;
+
+            
+        
+    
+        marker_6703596ce71f4e84b9caeb5ae2ac2ea9.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_e883b8da493c43abb2883e6dcc3f1812 = L.marker(
+            [30.0532448373422, -95.22394058924058],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d1e1eb46cbde437982ad2d19656aa3cf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_38ccfeb6f7a74953aaa1efd5192a3f39 = $('<div id="html_38ccfeb6f7a74953aaa1efd5192a3f39" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12171372?location=Cleveland%2C%20TX"target="_blank">$225</a></div>')[0];
+                popup_d1e1eb46cbde437982ad2d19656aa3cf.setContent(html_38ccfeb6f7a74953aaa1efd5192a3f39);
+            
+
+            marker_e883b8da493c43abb2883e6dcc3f1812.bindPopup(popup_d1e1eb46cbde437982ad2d19656aa3cf)
+            ;
+
+            
+        
+    
+        marker_e883b8da493c43abb2883e6dcc3f1812.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_14dd37d758474d65afe3723f46a7901d = L.marker(
+            [30.020267599567, -95.30296231036631],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_770cdb1d774a4a5f93ed7067638c2f2c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6dee26966a454dffb51610f5f90fd47c = $('<div id="html_6dee26966a454dffb51610f5f90fd47c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17007906?location=Cleveland%2C%20TX"target="_blank">$750</a></div>')[0];
+                popup_770cdb1d774a4a5f93ed7067638c2f2c.setContent(html_6dee26966a454dffb51610f5f90fd47c);
+            
+
+            marker_14dd37d758474d65afe3723f46a7901d.bindPopup(popup_770cdb1d774a4a5f93ed7067638c2f2c)
+            ;
+
+            
+        
+    
+        marker_14dd37d758474d65afe3723f46a7901d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a357e58ae1ca44a7ba610e828db8ca2c = L.marker(
+            [29.9825149927196, -95.1927154870775],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_21a98568474d4823ae44f379f633e0cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_22fffa5cce2249828ae3363bd76462c5 = $('<div id="html_22fffa5cce2249828ae3363bd76462c5" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17021076?location=Cleveland%2C%20TX"target="_blank">$675</a></div>')[0];
+                popup_21a98568474d4823ae44f379f633e0cb.setContent(html_22fffa5cce2249828ae3363bd76462c5);
+            
+
+            marker_a357e58ae1ca44a7ba610e828db8ca2c.bindPopup(popup_21a98568474d4823ae44f379f633e0cb)
+            ;
+
+            
+        
+    
+        marker_a357e58ae1ca44a7ba610e828db8ca2c.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_fc5a64a8a5734a3bbffd5aa6500610e9 = L.marker(
+            [30.0589402700512, -95.2227596773508],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_72dbbf2705fd4708842c2acc91409ec9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bacf3b56471c449b9651ebda3fe22485 = $('<div id="html_bacf3b56471c449b9651ebda3fe22485" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15008578?location=Cleveland%2C%20TX"target="_blank">$250</a></div>')[0];
+                popup_72dbbf2705fd4708842c2acc91409ec9.setContent(html_bacf3b56471c449b9651ebda3fe22485);
+            
+
+            marker_fc5a64a8a5734a3bbffd5aa6500610e9.bindPopup(popup_72dbbf2705fd4708842c2acc91409ec9)
+            ;
+
+            
+        
+    
+        marker_fc5a64a8a5734a3bbffd5aa6500610e9.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f16eb89bf3fa44778cfad56de56162a6 = L.marker(
+            [30.059557668712102, -95.24632810787399],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_e0f134fafa384cc2bd6d26736e9da5b9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_853ff0debdc9414f8c85c252c699eaf2 = $('<div id="html_853ff0debdc9414f8c85c252c699eaf2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16653501?location=Cleveland%2C%20TX"target="_blank">$90</a></div>')[0];
+                popup_e0f134fafa384cc2bd6d26736e9da5b9.setContent(html_853ff0debdc9414f8c85c252c699eaf2);
+            
+
+            marker_f16eb89bf3fa44778cfad56de56162a6.bindPopup(popup_e0f134fafa384cc2bd6d26736e9da5b9)
+            ;
+
+            
+        
+    
+        marker_f16eb89bf3fa44778cfad56de56162a6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_06464e23f9ac4931b593a26b0def100f = L.marker(
+            [30.003328080948897, -95.1940411788283],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_87b7f32cfad34bc39149e7a3076b87cf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d99a90f5a30496bb58f8c88457e8b92 = $('<div id="html_1d99a90f5a30496bb58f8c88457e8b92" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10993118?location=Cleveland%2C%20TX"target="_blank">$55</a></div>')[0];
+                popup_87b7f32cfad34bc39149e7a3076b87cf.setContent(html_1d99a90f5a30496bb58f8c88457e8b92);
+            
+
+            marker_06464e23f9ac4931b593a26b0def100f.bindPopup(popup_87b7f32cfad34bc39149e7a3076b87cf)
+            ;
+
+            
+        
+    
+        marker_06464e23f9ac4931b593a26b0def100f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a82a93da50c248769559678fd273a11f = L.marker(
+            [30.004368436375998, -95.19544538794091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6551b5ff76db4e2393837d5c1ca8c0a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_79ba183d0f9b435baeeb0d0e12c0334b = $('<div id="html_79ba183d0f9b435baeeb0d0e12c0334b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17045442?location=Cleveland%2C%20TX"target="_blank">$250</a></div>')[0];
+                popup_6551b5ff76db4e2393837d5c1ca8c0a8.setContent(html_79ba183d0f9b435baeeb0d0e12c0334b);
+            
+
+            marker_a82a93da50c248769559678fd273a11f.bindPopup(popup_6551b5ff76db4e2393837d5c1ca8c0a8)
+            ;
+
+            
+        
+    
+        marker_a82a93da50c248769559678fd273a11f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_346da220129b476692883d4d32d394e7 = L.marker(
+            [29.9866936050226, -95.17275353807351],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_630867d560c2434e9d18b108d5a7b337 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_805de78d8bc84f26ac2bb17397c84f91 = $('<div id="html_805de78d8bc84f26ac2bb17397c84f91" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16896561?location=Cleveland%2C%20TX"target="_blank">$1500</a></div>')[0];
+                popup_630867d560c2434e9d18b108d5a7b337.setContent(html_805de78d8bc84f26ac2bb17397c84f91);
+            
+
+            marker_346da220129b476692883d4d32d394e7.bindPopup(popup_630867d560c2434e9d18b108d5a7b337)
+            ;
+
+            
+        
+    
+        marker_346da220129b476692883d4d32d394e7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_85ab35a62600478ca21837186c921123 = L.marker(
+            [30.010131731750498, -95.186275062284],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_19fd3198aea946a7b7191bc8589b2fca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_906a12b1fe78412cb1d7f6bc2d53971d = $('<div id="html_906a12b1fe78412cb1d7f6bc2d53971d" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15604582?location=Cleveland%2C%20TX"target="_blank">$1750</a></div>')[0];
+                popup_19fd3198aea946a7b7191bc8589b2fca.setContent(html_906a12b1fe78412cb1d7f6bc2d53971d);
+            
+
+            marker_85ab35a62600478ca21837186c921123.bindPopup(popup_19fd3198aea946a7b7191bc8589b2fca)
+            ;
+
+            
+        
+    
+        marker_85ab35a62600478ca21837186c921123.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b4f28a188406468c845c03d88e9ca96a = L.marker(
+            [30.000014319537396, -95.27978787852649],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d213403a4d754c8ca87b033aeedc78d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80c89b1ddb3741e1896de299b6ec8ff1 = $('<div id="html_80c89b1ddb3741e1896de299b6ec8ff1" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16976091?location=Cleveland%2C%20TX"target="_blank">$250</a></div>')[0];
+                popup_d213403a4d754c8ca87b033aeedc78d7.setContent(html_80c89b1ddb3741e1896de299b6ec8ff1);
+            
+
+            marker_b4f28a188406468c845c03d88e9ca96a.bindPopup(popup_d213403a4d754c8ca87b033aeedc78d7)
+            ;
+
+            
+        
+    
+        marker_b4f28a188406468c845c03d88e9ca96a.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_18e16f3442614da7a69fbafe0b35132f = L.marker(
+            [30.0720408123318, -95.2423463065666],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ad889f90e0eb4333b0b75c7d63d9312b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c0fbce8292674412a9b3cc4e99b3ba32 = $('<div id="html_c0fbce8292674412a9b3cc4e99b3ba32" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13312619?location=Cleveland%2C%20TX"target="_blank">$80</a></div>')[0];
+                popup_ad889f90e0eb4333b0b75c7d63d9312b.setContent(html_c0fbce8292674412a9b3cc4e99b3ba32);
+            
+
+            marker_18e16f3442614da7a69fbafe0b35132f.bindPopup(popup_ad889f90e0eb4333b0b75c7d63d9312b)
+            ;
+
+            
+        
+    
+        marker_18e16f3442614da7a69fbafe0b35132f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_abbaca1aa3814b37904046dd4e3658a7 = L.marker(
+            [29.986575135415897, -95.19568602239849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_3e779f7cc14843a4b63900c83328aed8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c897c8bd03048a8b556bf88c8ea3860 = $('<div id="html_6c897c8bd03048a8b556bf88c8ea3860" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13847391?location=Cleveland%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_3e779f7cc14843a4b63900c83328aed8.setContent(html_6c897c8bd03048a8b556bf88c8ea3860);
+            
+
+            marker_abbaca1aa3814b37904046dd4e3658a7.bindPopup(popup_3e779f7cc14843a4b63900c83328aed8)
+            ;
+
+            
+        
+    
+        marker_abbaca1aa3814b37904046dd4e3658a7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_816218ac7b0548798d822862a661227d = L.marker(
+            [30.0394341289536, -95.22547734814529],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_93a2ab2eb97e41b899d85f55749373a0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_91e0a8480df94666b44c8f99312036e0 = $('<div id="html_91e0a8480df94666b44c8f99312036e0" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17046694?location=Cleveland%2C%20TX"target="_blank">$77</a></div>')[0];
+                popup_93a2ab2eb97e41b899d85f55749373a0.setContent(html_91e0a8480df94666b44c8f99312036e0);
+            
+
+            marker_816218ac7b0548798d822862a661227d.bindPopup(popup_93a2ab2eb97e41b899d85f55749373a0)
+            ;
+
+            
+        
+    
+        marker_816218ac7b0548798d822862a661227d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_85a51132c40e4482846562f980f84990 = L.marker(
+            [29.9404208366708, -95.20818149307459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_2f823f6072b640e78381bdf9c0237c9d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dacdacc341074177acde0dbb2df36820 = $('<div id="html_dacdacc341074177acde0dbb2df36820" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16673133?location=Channelview%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_2f823f6072b640e78381bdf9c0237c9d.setContent(html_dacdacc341074177acde0dbb2df36820);
+            
+
+            marker_85a51132c40e4482846562f980f84990.bindPopup(popup_2f823f6072b640e78381bdf9c0237c9d)
+            ;
+
+            
+        
+    
+        marker_85a51132c40e4482846562f980f84990.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1ab84046086c497791cead208b093ba7 = L.marker(
+            [30.042531617764002, -95.20456846417541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_446e5ff559804987a5b1c2d69d840ae4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a9dff20761054d7e9bda954f8ee1917f = $('<div id="html_a9dff20761054d7e9bda954f8ee1917f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16816337?location=Cleveland%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_446e5ff559804987a5b1c2d69d840ae4.setContent(html_a9dff20761054d7e9bda954f8ee1917f);
+            
+
+            marker_1ab84046086c497791cead208b093ba7.bindPopup(popup_446e5ff559804987a5b1c2d69d840ae4)
+            ;
+
+            
+        
+    
+        marker_1ab84046086c497791cead208b093ba7.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_1f7a0ca2e1d24d49bec6ad11396285f6 = L.marker(
+            [29.989861297849004, -95.2471603482132],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_b67e0f7ec5dd409d90b33714d5fd777d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_be044cac4b6f4d9f8800b3fa4146db34 = $('<div id="html_be044cac4b6f4d9f8800b3fa4146db34" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12670981?location=Cleveland%2C%20TX"target="_blank">$25</a></div>')[0];
+                popup_b67e0f7ec5dd409d90b33714d5fd777d.setContent(html_be044cac4b6f4d9f8800b3fa4146db34);
+            
+
+            marker_1f7a0ca2e1d24d49bec6ad11396285f6.bindPopup(popup_b67e0f7ec5dd409d90b33714d5fd777d)
+            ;
+
+            
+        
+    
+        marker_1f7a0ca2e1d24d49bec6ad11396285f6.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_273bc57032bf4e84a138345794fddb0d = L.marker(
+            [29.9313906934439, -95.2026148840781],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_fd2049b3bfbe4fe7b667267ac7b1d8cc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_40fb5d40d7eb46d583b1be29aba6cf91 = $('<div id="html_40fb5d40d7eb46d583b1be29aba6cf91" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16997211?location=Channelview%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_fd2049b3bfbe4fe7b667267ac7b1d8cc.setContent(html_40fb5d40d7eb46d583b1be29aba6cf91);
+            
+
+            marker_273bc57032bf4e84a138345794fddb0d.bindPopup(popup_fd2049b3bfbe4fe7b667267ac7b1d8cc)
+            ;
+
+            
+        
+    
+        marker_273bc57032bf4e84a138345794fddb0d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7e4a73c0d41e4332aa5e5cc193c1de8d = L.marker(
+            [30.042531617764002, -95.20456846417541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_aa6430e5c49f4ed9ab0f9f4da6a13608 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5c75bbd6403b432bbd50a8c35b0a1c37 = $('<div id="html_5c75bbd6403b432bbd50a8c35b0a1c37" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16816337?location=Atascocita%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_aa6430e5c49f4ed9ab0f9f4da6a13608.setContent(html_5c75bbd6403b432bbd50a8c35b0a1c37);
+            
+
+            marker_7e4a73c0d41e4332aa5e5cc193c1de8d.bindPopup(popup_aa6430e5c49f4ed9ab0f9f4da6a13608)
+            ;
+
+            
+        
+    
+        marker_7e4a73c0d41e4332aa5e5cc193c1de8d.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_586950f539d44d4c985d6da7b89aecdd = L.marker(
+            [29.9378413656248, -95.2421928409867],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_e490699214a94bc586c56b98cb195472 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7c8cfd48f6c7452fb76908e2c5676e83 = $('<div id="html_7c8cfd48f6c7452fb76908e2c5676e83" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/1884919?location=Atascocita%2C%20TX"target="_blank">$37</a></div>')[0];
+                popup_e490699214a94bc586c56b98cb195472.setContent(html_7c8cfd48f6c7452fb76908e2c5676e83);
+            
+
+            marker_586950f539d44d4c985d6da7b89aecdd.bindPopup(popup_e490699214a94bc586c56b98cb195472)
+            ;
+
+            
+        
+    
+        marker_586950f539d44d4c985d6da7b89aecdd.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4be0582252964d748b2b9d1cbba95b91 = L.marker(
+            [29.9569577349907, -95.17458200720729],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_369124ca335e41aaa3b2c1510b17462e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9aa6c403786d4e4094d49781a5f3115c = $('<div id="html_9aa6c403786d4e4094d49781a5f3115c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16741539?location=Atascocita%2C%20TX"target="_blank">$1500</a></div>')[0];
+                popup_369124ca335e41aaa3b2c1510b17462e.setContent(html_9aa6c403786d4e4094d49781a5f3115c);
+            
+
+            marker_4be0582252964d748b2b9d1cbba95b91.bindPopup(popup_369124ca335e41aaa3b2c1510b17462e)
+            ;
+
+            
+        
+    
+        marker_4be0582252964d748b2b9d1cbba95b91.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6513446786864d9a87479fcf5e00957f = L.marker(
+            [30.039182862202896, -95.22587646521539],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a3f797147cce44c2b39825607655a60e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b3ab583b3ae44c6b927ca566131f40dd = $('<div id="html_b3ab583b3ae44c6b927ca566131f40dd" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18852447?location=Atascocita%2C%20TX"target="_blank">$47</a></div>')[0];
+                popup_a3f797147cce44c2b39825607655a60e.setContent(html_b3ab583b3ae44c6b927ca566131f40dd);
+            
+
+            marker_6513446786864d9a87479fcf5e00957f.bindPopup(popup_a3f797147cce44c2b39825607655a60e)
+            ;
+
+            
+        
+    
+        marker_6513446786864d9a87479fcf5e00957f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7c35c6c2294b40f88bfa05d03a61ccb3 = L.marker(
+            [29.936234124172696, -95.26261767968658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_9c0af589f75e4d26955246d0c629412e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8d996b23c6da4d3fa916a222ea58fcd8 = $('<div id="html_8d996b23c6da4d3fa916a222ea58fcd8" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18997638?location=Baytown%2C%20TX"target="_blank">$23</a></div>')[0];
+                popup_9c0af589f75e4d26955246d0c629412e.setContent(html_8d996b23c6da4d3fa916a222ea58fcd8);
+            
+
+            marker_7c35c6c2294b40f88bfa05d03a61ccb3.bindPopup(popup_9c0af589f75e4d26955246d0c629412e)
+            ;
+
+            
+        
+    
+        marker_7c35c6c2294b40f88bfa05d03a61ccb3.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f1380f2a539742b7a66cf27458b5433f = L.marker(
+            [29.9652067168884, -95.1897048297379],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d22e62bff5f3412daf5c0de5cea53aa9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2b7c450aadd143f79c8c47b1f767034a = $('<div id="html_2b7c450aadd143f79c8c47b1f767034a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12763871?location=Atascocita%2C%20TX"target="_blank">$50</a></div>')[0];
+                popup_d22e62bff5f3412daf5c0de5cea53aa9.setContent(html_2b7c450aadd143f79c8c47b1f767034a);
+            
+
+            marker_f1380f2a539742b7a66cf27458b5433f.bindPopup(popup_d22e62bff5f3412daf5c0de5cea53aa9)
+            ;
+
+            
+        
+    
+        marker_f1380f2a539742b7a66cf27458b5433f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_eec1dffbe31b4f45b5940023ce04a5ee = L.marker(
+            [30.000942588551997, -95.25816793356572],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0117129256f447c387f2a084471337df = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2d359474fdc544ea88274cbc7673824a = $('<div id="html_2d359474fdc544ea88274cbc7673824a" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17006337?location=Atascocita%2C%20TX"target="_blank">$81</a></div>')[0];
+                popup_0117129256f447c387f2a084471337df.setContent(html_2d359474fdc544ea88274cbc7673824a);
+            
+
+            marker_eec1dffbe31b4f45b5940023ce04a5ee.bindPopup(popup_0117129256f447c387f2a084471337df)
+            ;
+
+            
+        
+    
+        marker_eec1dffbe31b4f45b5940023ce04a5ee.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b470ab8a59b44d1a34d0761df7a1922 = L.marker(
+            [30.0127146628369, -95.19130193738859],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_1fcfc4cf852f472db819cbdc3aa3c08a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_77ac0e2a53934d9b83ccb5190d05719b = $('<div id="html_77ac0e2a53934d9b83ccb5190d05719b" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16442102?location=Atascocita%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_1fcfc4cf852f472db819cbdc3aa3c08a.setContent(html_77ac0e2a53934d9b83ccb5190d05719b);
+            
+
+            marker_2b470ab8a59b44d1a34d0761df7a1922.bindPopup(popup_1fcfc4cf852f472db819cbdc3aa3c08a)
+            ;
+
+            
+        
+    
+        marker_2b470ab8a59b44d1a34d0761df7a1922.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_5128a12bc6084f728edebf2288a5455f = L.marker(
+            [29.986575135415897, -95.19568602239849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8d3ad3336c3143fb8be30a1cfa813c01 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_903ddbf0ae7d424e949c8febb1a6ac7f = $('<div id="html_903ddbf0ae7d424e949c8febb1a6ac7f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/13847391?location=Atascocita%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_8d3ad3336c3143fb8be30a1cfa813c01.setContent(html_903ddbf0ae7d424e949c8febb1a6ac7f);
+            
+
+            marker_5128a12bc6084f728edebf2288a5455f.bindPopup(popup_8d3ad3336c3143fb8be30a1cfa813c01)
+            ;
+
+            
+        
+    
+        marker_5128a12bc6084f728edebf2288a5455f.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d7b6823ddc2e49b0838f911fe178ff35 = L.marker(
+            [29.9295383838455, -95.250962378514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_3692eca5cf9a4624aae809270d56a338 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fe8372545694498ea8457014b60ee50f = $('<div id="html_fe8372545694498ea8457014b60ee50f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4520039?location=Atascocita%2C%20TX"target="_blank">$200</a></div>')[0];
+                popup_3692eca5cf9a4624aae809270d56a338.setContent(html_fe8372545694498ea8457014b60ee50f);
+            
+
+            marker_d7b6823ddc2e49b0838f911fe178ff35.bindPopup(popup_3692eca5cf9a4624aae809270d56a338)
+            ;
+
+            
+        
+    
+        marker_d7b6823ddc2e49b0838f911fe178ff35.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_db30c291668e40c1865dd25cdf2b4a77 = L.marker(
+            [30.0394341289536, -95.22547734814529],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0f7cfb46200c483a9a3a32d330de8dec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b62a0ec3fbf4c748da07e1629f28b1e = $('<div id="html_1b62a0ec3fbf4c748da07e1629f28b1e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17046694?location=Atascocita%2C%20TX"target="_blank">$77</a></div>')[0];
+                popup_0f7cfb46200c483a9a3a32d330de8dec.setContent(html_1b62a0ec3fbf4c748da07e1629f28b1e);
+            
+
+            marker_db30c291668e40c1865dd25cdf2b4a77.bindPopup(popup_0f7cfb46200c483a9a3a32d330de8dec)
+            ;
+
+            
+        
+    
+        marker_db30c291668e40c1865dd25cdf2b4a77.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_50ee8488606e4ccb99832de828fe9127 = L.marker(
+            [30.0054443247446, -95.1697876936083],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_688fde0f32864c1fa54bc58b60a67966 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6a22def37514f71a7de6db83f8a7882 = $('<div id="html_a6a22def37514f71a7de6db83f8a7882" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16975933?location=Atascocita%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_688fde0f32864c1fa54bc58b60a67966.setContent(html_a6a22def37514f71a7de6db83f8a7882);
+            
+
+            marker_50ee8488606e4ccb99832de828fe9127.bindPopup(popup_688fde0f32864c1fa54bc58b60a67966)
+            ;
+
+            
+        
+    
+        marker_50ee8488606e4ccb99832de828fe9127.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ffec81869c743e993c927ae37c39425 = L.marker(
+            [29.968873452978603, -95.1818540079541],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_d8bc7632975e42a993b6f27619954b15 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ba9aea3659c42c3a684674887218420 = $('<div id="html_6ba9aea3659c42c3a684674887218420" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/14521900?location=Atascocita%2C%20TX"target="_blank">$45</a></div>')[0];
+                popup_d8bc7632975e42a993b6f27619954b15.setContent(html_6ba9aea3659c42c3a684674887218420);
+            
+
+            marker_6ffec81869c743e993c927ae37c39425.bindPopup(popup_d8bc7632975e42a993b6f27619954b15)
+            ;
+
+            
+        
+    
+        marker_6ffec81869c743e993c927ae37c39425.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f6f1e59e92474d3c86c2d0cb744c57de = L.marker(
+            [29.9344082971423, -95.2327034427981],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_24dd8eb725af4fcaa31197248b53fb14 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6d21d98664db492fb0a8271371a23fb4 = $('<div id="html_6d21d98664db492fb0a8271371a23fb4" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16810037?location=Atascocita%2C%20TX"target="_blank">$450</a></div>')[0];
+                popup_24dd8eb725af4fcaa31197248b53fb14.setContent(html_6d21d98664db492fb0a8271371a23fb4);
+            
+
+            marker_f6f1e59e92474d3c86c2d0cb744c57de.bindPopup(popup_24dd8eb725af4fcaa31197248b53fb14)
+            ;
+
+            
+        
+    
+        marker_f6f1e59e92474d3c86c2d0cb744c57de.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_092b98838cfc4ec8a9dd7725bd531647 = L.marker(
+            [29.941549154677897, -95.250319039212],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_36f9a14a99fb4144a0ce97755246c395 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_56c94641bacb4848b665767cf88099ea = $('<div id="html_56c94641bacb4848b665767cf88099ea" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/7880915?location=Baytown%2C%20TX"target="_blank">$165</a></div>')[0];
+                popup_36f9a14a99fb4144a0ce97755246c395.setContent(html_56c94641bacb4848b665767cf88099ea);
+            
+
+            marker_092b98838cfc4ec8a9dd7725bd531647.bindPopup(popup_36f9a14a99fb4144a0ce97755246c395)
+            ;
+
+            
+        
+    
+        marker_092b98838cfc4ec8a9dd7725bd531647.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a901460955534b2eb1b9e49bf458b119 = L.marker(
+            [30.0085341314413, -95.2963030042795],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_306c7fca9fec49d1bad28137bf7c9892 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e812b0212e6c45b58a27ab974dd379b2 = $('<div id="html_e812b0212e6c45b58a27ab974dd379b2" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16947015?location=Atascocita%2C%20TX"target="_blank">$40</a></div>')[0];
+                popup_306c7fca9fec49d1bad28137bf7c9892.setContent(html_e812b0212e6c45b58a27ab974dd379b2);
+            
+
+            marker_a901460955534b2eb1b9e49bf458b119.bindPopup(popup_306c7fca9fec49d1bad28137bf7c9892)
+            ;
+
+            
+        
+    
+        marker_a901460955534b2eb1b9e49bf458b119.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_67afb42be35f4b5fbd8c346a300cb85b = L.marker(
+            [30.000942588551997, -95.25816793356572],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_4e6db9f3d17e4bbaa737951dfcc63243 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5b8882275e5341d1ba30ac5036fbe63f = $('<div id="html_5b8882275e5341d1ba30ac5036fbe63f" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/17006337?location=Baytown%2C%20TX"target="_blank">$81</a></div>')[0];
+                popup_4e6db9f3d17e4bbaa737951dfcc63243.setContent(html_5b8882275e5341d1ba30ac5036fbe63f);
+            
+
+            marker_67afb42be35f4b5fbd8c346a300cb85b.bindPopup(popup_4e6db9f3d17e4bbaa737951dfcc63243)
+            ;
+
+            
+        
+    
+        marker_67afb42be35f4b5fbd8c346a300cb85b.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_94e5dd37c73b4757aa6427f59823ea42 = L.marker(
+            [30.071704427375103, -95.2028152811623],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_dbfcb0d40b914fc7b797d3cd352baa39 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3bd359feb82b4ca9bbc176bea693242c = $('<div id="html_3bd359feb82b4ca9bbc176bea693242c" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16596486?location=Atascocita%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_dbfcb0d40b914fc7b797d3cd352baa39.setContent(html_3bd359feb82b4ca9bbc176bea693242c);
+            
+
+            marker_94e5dd37c73b4757aa6427f59823ea42.bindPopup(popup_dbfcb0d40b914fc7b797d3cd352baa39)
+            ;
+
+            
+        
+    
+        marker_94e5dd37c73b4757aa6427f59823ea42.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0abc7aade13465a98ffdeb295e3e279 = L.marker(
+            [29.989861297849004, -95.2471603482132],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_6bf8962688354d6c8c6368ca42107370 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d6c71f514fae483fa85de15fb4ae3c8e = $('<div id="html_d6c71f514fae483fa85de15fb4ae3c8e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/12670981?location=Atascocita%2C%20TX"target="_blank">$25</a></div>')[0];
+                popup_6bf8962688354d6c8c6368ca42107370.setContent(html_d6c71f514fae483fa85de15fb4ae3c8e);
+            
+
+            marker_f0abc7aade13465a98ffdeb295e3e279.bindPopup(popup_6bf8962688354d6c8c6368ca42107370)
+            ;
+
+            
+        
+    
+        marker_f0abc7aade13465a98ffdeb295e3e279.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad102d120dbf482dabe6d85a99287505 = L.marker(
+            [29.937983635869397, -95.21750399233879],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_7f6832db0ff845a1afba5c7115ad78fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1aec8cccbbac41d4bac709ab3f38658e = $('<div id="html_1aec8cccbbac41d4bac709ab3f38658e" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/10888712?location=Baytown%2C%20TX"target="_blank">$39</a></div>')[0];
+                popup_7f6832db0ff845a1afba5c7115ad78fe.setContent(html_1aec8cccbbac41d4bac709ab3f38658e);
+            
+
+            marker_ad102d120dbf482dabe6d85a99287505.bindPopup(popup_7f6832db0ff845a1afba5c7115ad78fe)
+            ;
+
+            
+        
+    
+        marker_ad102d120dbf482dabe6d85a99287505.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c6829147edf04440b7c37a3047b990d1 = L.marker(
+            [29.941549154677897, -95.250319039212],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_ac002d6a6c024eb289f1a077c95112fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c78fafd6b1ad45c9aea3f50680f3b196 = $('<div id="html_c78fafd6b1ad45c9aea3f50680f3b196" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/7880915?location=Atascocita%2C%20TX"target="_blank">$165</a></div>')[0];
+                popup_ac002d6a6c024eb289f1a077c95112fe.setContent(html_c78fafd6b1ad45c9aea3f50680f3b196);
+            
+
+            marker_c6829147edf04440b7c37a3047b990d1.bindPopup(popup_ac002d6a6c024eb289f1a077c95112fe)
+            ;
+
+            
+        
+    
+        marker_c6829147edf04440b7c37a3047b990d1.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_b14e2813fa5e40e4a55c83efba9095a2 = L.marker(
+            [29.9295383838455, -95.250962378514],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a4e841b35fe743dd87051bbe44163b1b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_20be0b66794a4cea8ac8b6803bb77fc3 = $('<div id="html_20be0b66794a4cea8ac8b6803bb77fc3" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/4520039?location=Baytown%2C%20TX"target="_blank">$200</a></div>')[0];
+                popup_a4e841b35fe743dd87051bbe44163b1b.setContent(html_20be0b66794a4cea8ac8b6803bb77fc3);
+            
+
+            marker_b14e2813fa5e40e4a55c83efba9095a2.bindPopup(popup_a4e841b35fe743dd87051bbe44163b1b)
+            ;
+
+            
+        
+    
+        marker_b14e2813fa5e40e4a55c83efba9095a2.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bd6e55be2c0144c2b5ce3fb8f0bb37ac = L.marker(
+            [30.069125456936998, -95.20439454433858],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_2033e512aaf042118fd59f030973d942 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_00479dc5b1744e84b3dd1c4cab74db80 = $('<div id="html_00479dc5b1744e84b3dd1c4cab74db80" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16427580?location=Atascocita%2C%20TX"target="_blank">$35</a></div>')[0];
+                popup_2033e512aaf042118fd59f030973d942.setContent(html_00479dc5b1744e84b3dd1c4cab74db80);
+            
+
+            marker_bd6e55be2c0144c2b5ce3fb8f0bb37ac.bindPopup(popup_2033e512aaf042118fd59f030973d942)
+            ;
+
+            
+        
+    
+        marker_bd6e55be2c0144c2b5ce3fb8f0bb37ac.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_c2818abca8484e0483a8ae0704d21551 = L.marker(
+            [30.0100616163868, -95.290028643531],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a554758bfc6d41a4a729f04a0f4bfec5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a1a9028e14fa441898df1bbd26667754 = $('<div id="html_a1a9028e14fa441898df1bbd26667754" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/15391685?location=Atascocita%2C%20TX"target="_blank">$50</a></div>')[0];
+                popup_a554758bfc6d41a4a729f04a0f4bfec5.setContent(html_a1a9028e14fa441898df1bbd26667754);
+            
+
+            marker_c2818abca8484e0483a8ae0704d21551.bindPopup(popup_a554758bfc6d41a4a729f04a0f4bfec5)
+            ;
+
+            
+        
+    
+        marker_c2818abca8484e0483a8ae0704d21551.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_7398ce2528824f249e063881fe47cd23 = L.marker(
+            [29.9963021066533, -95.2687710107982],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_5b07d16fbb194be3b1cd071f351adb25 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f52941f5fc7a469e966d844e21499e74 = $('<div id="html_f52941f5fc7a469e966d844e21499e74" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16396544?location=Atascocita%2C%20TX"target="_blank">$27</a></div>')[0];
+                popup_5b07d16fbb194be3b1cd071f351adb25.setContent(html_f52941f5fc7a469e966d844e21499e74);
+            
+
+            marker_7398ce2528824f249e063881fe47cd23.bindPopup(popup_5b07d16fbb194be3b1cd071f351adb25)
+            ;
+
+            
+        
+    
+        marker_7398ce2528824f249e063881fe47cd23.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_13eac4632d734178a6c98d07a9e435d8 = L.marker(
+            [29.9313906934439, -95.2026148840781],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_a06215f865f0411290efd326921054c3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2567f4b92db54af4a5c502496c1f5b78 = $('<div id="html_2567f4b92db54af4a5c502496c1f5b78" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16997211?location=Atascocita%2C%20TX"target="_blank">$500</a></div>')[0];
+                popup_a06215f865f0411290efd326921054c3.setContent(html_2567f4b92db54af4a5c502496c1f5b78);
+            
+
+            marker_13eac4632d734178a6c98d07a9e435d8.bindPopup(popup_a06215f865f0411290efd326921054c3)
+            ;
+
+            
+        
+    
+        marker_13eac4632d734178a6c98d07a9e435d8.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_01ee5931b9d7414ea6b25ebaae457a52 = L.marker(
+            [29.9404208366708, -95.20818149307459],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_8c9bf6f3aba448b7afca3d5e421c8b90 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a441eede340c48b2aada6bc40911fba3 = $('<div id="html_a441eede340c48b2aada6bc40911fba3" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16673133?location=Atascocita%2C%20TX"target="_blank">$300</a></div>')[0];
+                popup_8c9bf6f3aba448b7afca3d5e421c8b90.setContent(html_a441eede340c48b2aada6bc40911fba3);
+            
+
+            marker_01ee5931b9d7414ea6b25ebaae457a52.bindPopup(popup_8c9bf6f3aba448b7afca3d5e421c8b90)
+            ;
+
+            
+        
+    
+        marker_01ee5931b9d7414ea6b25ebaae457a52.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_6aa1c55d261f4224bca6ad4249b3422c = L.marker(
+            [29.936234124172696, -95.26261767968658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_effd0747e8694d5694a003a2d48b3dbf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_69c3366af83e40878274a417a30ba6ce = $('<div id="html_69c3366af83e40878274a417a30ba6ce" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/18997638?location=Atascocita%2C%20TX"target="_blank">$23</a></div>')[0];
+                popup_effd0747e8694d5694a003a2d48b3dbf.setContent(html_69c3366af83e40878274a417a30ba6ce);
+            
+
+            marker_6aa1c55d261f4224bca6ad4249b3422c.bindPopup(popup_effd0747e8694d5694a003a2d48b3dbf)
+            ;
+
+            
+        
+    
+        marker_6aa1c55d261f4224bca6ad4249b3422c.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_56383672296843dcadbc5f1668bf4083 = L.marker(
+            [29.9627205336553, -95.1737489018466],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_bc4e3c5d71084954b82b8cf9c494a8b6);
+        
+    
+            var popup_0302b39c60924fe490f106020f9865dc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_327f73cf89d6498cab333e2ed83dc701 = $('<div id="html_327f73cf89d6498cab333e2ed83dc701" style="width: 100.0%; height: 100.0%;"><a href="https://www.airbnb.com/rooms/16011137?location=Atascocita%2C%20TX"target="_blank">$350</a></div>')[0];
+                popup_0302b39c60924fe490f106020f9865dc.setContent(html_327f73cf89d6498cab333e2ed83dc701);
+            
+
+            marker_56383672296843dcadbc5f1668bf4083.bindPopup(popup_0302b39c60924fe490f106020f9865dc)
+            ;
+
+            
+        
+    
+        marker_56383672296843dcadbc5f1668bf4083.bindTooltip(
+            '<div>'
+            + 'Click me!' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
