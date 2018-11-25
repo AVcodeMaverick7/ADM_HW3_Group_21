@@ -29,7 +29,7 @@ Importing libraries Numpy, pandas,Json,Natural Language Toolkit for Tokenization
 * inv_indx.json             (Inverted Index for first Search Engine  )
 * new_invindx.json          (Inverted Index for Second Search Engine )
 * Humble_SearchResults.html (Map showing search results for a place e.g Humble )
-* vocabulary      ( A more optimized search engine which has less runtime )
+* vocabulary                (vocabulary in text )
 * new_backup_title_desc     (data containing the title and description )
 
 
