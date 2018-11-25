@@ -1,5 +1,4 @@
 ### Group 21
-
 # ADM_HOMEWORK 3
 
  In this homework we analyze the text of Airbnb property listings by creating  separate document as tsv file for each record from the dataset, we also built two separate search engines to analyse the text given in the query and fetch the properties that match our query 
@@ -18,22 +17,22 @@ Importing libraries Numpy, pandas , Json ,Natural Language Toolkit for Tokenizat
 
 ### Installing
 
-Anaconda Navigator
-Python with Jupyter Notebook as IDE
+* Anaconda Navigator
+* Python with Jupyter Notebook as IDE
 
 
 ### Main Scripts
 
-Homework_3.ipynb          (It has all the code that is required to do this text analysis and populate search results ) 
-termiddic.json            (Our vocabulary of words ) 
-inv_indx.json             (Inverted Index for first Search Engine  )
-new_invindx.json          (Inverted Index for Second Search Engine )
-Humble_SearchResults.html (Map showing search results for a place e.g Humble )
+* Homework_3.ipynb          (It has all the code that is required to do this text analysis and populate search results ) 
+* termiddic.json            (Our vocabulary of words ) 
+* inv_indx.json             (Inverted Index for first Search Engine  )
+* new_invindx.json          (Inverted Index for Second Search Engine )
+* Humble_SearchResults.html (Map showing search results for a place e.g Humble )
 
 
 ## Authors
 
-* **Atefe Moradan** 
-  **Giuseppe Stefanelli**
-  **Vikranth Ale**
+*  **Atefe Moradan** 
+*  **Giuseppe Stefanelli**
+*  **Vikranth Ale**
   
