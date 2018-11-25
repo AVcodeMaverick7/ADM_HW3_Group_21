@@ -7,12 +7,12 @@
 
 ## Getting Started
 
-Download the required dataset from [here](https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas) and load them into a dataframe for cleaning the data, Convert the each row of CSV file as a separate document, Extract the text in the documents and save it as dictionary to create an inverted index, and them build your search engine calculating the tfidf based on cosine similarity, For an interactive search results make use of folium and geopy to show it on map.
+Download the required dataset from [here](https://www.kaggle.com/PromptCloudHQ/airbnb-property-data-from-texas) and load them into a dataframe for cleaning the data, Convert each row of CSV file as a separate document, Extract the text in the documents and save it as dictionary to create an inverted index, and then build your search engine calculating the tfidf based on cosine similarity, For an interactive search results make use of folium and geopy to show it on the map.
 
 
 ### Prerequisites
 
-Importing libraries Numpy, pandas , Json ,Natural Language Toolkit for Tokenization, stemming and stop words , Scipy for calculating cosine similarity, Folium and Geopy for maps and calculating the Latitude,Longitude and distance information on maps.
+Importing libraries Numpy, pandas,Json,Natural Language Toolkit for Tokenization, stemming and stop words, Scipy for calculating cosine similarity,Folium and Geopy for maps and calculating the Latitude,Longitude and distance information on maps.
 
 
 ### Installing
